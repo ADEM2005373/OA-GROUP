@@ -6,25 +6,14 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 const rawPort = process.env.PORT;
 
-if (!rawPort) {
-  throw new Error(
-    "PORT environment variable is required but was not provided.",
-  );
-}
-
-const port = Number(rawPort);
-
-if (Number.isNaN(port) || port <= 0) {
+// Don't require `PORT` for production builds — only validate when provided.
+const port = rawPort ? Number(rawPort) : undefined;
+if (rawPort && (Number.isNaN(port) || (typeof port === "number" && port <= 0))) {
   throw new Error(`Invalid PORT value: "${rawPort}"`);
 }
 
-const basePath = process.env.BASE_PATH;
-
-if (!basePath) {
-  throw new Error(
-    "BASE_PATH environment variable is required but was not provided.",
-  );
-}
+// Provide a sensible default for `BASE_PATH` during builds.
+const basePath = process.env.BASE_PATH ?? "/";
 
 export default defineConfig({
   base: basePath,
@@ -59,8 +48,7 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
-    port,
-    strictPort: true,
+    ...(port ? { port, strictPort: true } : {}),
     host: "0.0.0.0",
     allowedHosts: true,
     fs: {
@@ -68,7 +56,7 @@ export default defineConfig({
     },
   },
   preview: {
-    port,
+    ...(port ? { port } : {}),
     host: "0.0.0.0",
     allowedHosts: true,
   },
