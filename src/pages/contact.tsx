@@ -23,7 +23,7 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-const FORM_ACTION_URL = "FORM_ACTION_URL_HERE";
+const FORM_ACTION_URL = "https://formspree.io/f/mlgzyegd";
 
 const services = [
   "Web Applications",
