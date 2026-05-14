@@ -1,0 +1,10 @@
+{
+  "name": "@workspace/api-client-react",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "echo building stub... && mkdir -p dist && echo \"module.exports = {}\" > dist/index.js && echo \"export {}\" > dist/index.d.ts"
+  }
+}
