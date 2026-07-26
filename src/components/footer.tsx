@@ -1,7 +1,10 @@
 import { Link } from "wouter";
 import { ArrowRight, Mail, Phone } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-background border-t border-border/50 pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6">
@@ -15,8 +18,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
-              A modern commercial ecosystem building intelligent digital futures. 
-              Focused on long-term digital transformation and scalable growth.
+              {t("footer.description")}
             </p>
             <div className="flex flex-col gap-3">
               <a href="mailto:oa.for.dev@gmail.com" className="text-sm flex items-center gap-2 hover:text-primary transition-colors text-muted-foreground">
@@ -32,23 +34,23 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-6">Ecosystem</h4>
+            <h4 className="font-semibold mb-6">{t("footer.ecosystem")}</h4>
             <ul className="space-y-4">
               <li>
                 <Link href="/oa-for-dev" className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center group">
-                  OADIGI Tech
+                  {t("footer.links.tech")}
                   <ArrowRight className="w-3 h-3 ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                 </Link>
               </li>
               <li>
                 <Link href="/oa-strategies" className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center group">
-                  OADIGI Strategy
+                  {t("footer.links.strategy")}
                   <ArrowRight className="w-3 h-3 ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                 </Link>
               </li>
               <li>
                 <Link href="/projects" className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center group">
-                  Methodology
+                  {t("footer.links.methodology")}
                   <ArrowRight className="w-3 h-3 ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                 </Link>
               </li>
@@ -56,31 +58,31 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-6">Company</h4>
+            <h4 className="font-semibold mb-6">{t("footer.company")}</h4>
             <ul className="space-y-4">
               <li>
-                <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors text-sm">About Us</Link>
+                <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors text-sm">{t("footer.links.about")}</Link>
               </li>
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors text-sm">Services</Link>
+                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors text-sm">{t("footer.links.services")}</Link>
               </li>
               <li>
-                <Link href="/vision" className="text-muted-foreground hover:text-primary transition-colors text-sm">Vision & Strategy</Link>
+                <Link href="/vision" className="text-muted-foreground hover:text-primary transition-colors text-sm">{t("footer.links.vision")}</Link>
               </li>
               <li>
-                <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors text-sm">Contact</Link>
+                <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors text-sm">{t("footer.links.contact")}</Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-6">Legal</h4>
+            <h4 className="font-semibold mb-6">{t("footer.legal")}</h4>
             <ul className="space-y-4">
               <li>
-                <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors text-sm">Privacy Policy</Link>
+                <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors text-sm">{t("footer.links.privacy")}</Link>
               </li>
               <li>
-                <Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors text-sm">Terms & Conditions</Link>
+                <Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors text-sm">{t("footer.links.terms")}</Link>
               </li>
             </ul>
           </div>
@@ -88,10 +90,10 @@ export function Footer() {
 
         <div className="border-t border-border/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2025 OADIGI. All rights reserved.
+            {t("footer.copyright")}
           </p>
           <p className="text-xs text-muted-foreground/60 text-center md:text-right max-w-md">
-            Confidentiality Statement: Information presented on this platform represents the strategic direction and service offerings of OADIGI.
+            {t("footer.statement")}
           </p>
         </div>
       </div>

@@ -1,9 +1,12 @@
 import { Link, useLocation } from "wouter";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
+import { LanguageThemeControls } from "@/components/language-theme-controls";
 
 export function Navbar() {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [location] = useLocation();
@@ -21,11 +24,11 @@ export function Navbar() {
   }, [location]);
 
   const navLinks = [
-    { href: "/about", label: "About" },
-    { href: "/services", label: "Services" },
-    { href: "/oa-for-dev", label: "OADIGI Tech" },
-    { href: "/oa-strategies", label: "OADIGI Strategy" },
-    { href: "/vision", label: "Vision" },
+    { href: "/about", label: t("nav.about") },
+    { href: "/services", label: t("nav.services") },
+    { href: "/oa-for-dev", label: t("nav.tech") },
+    { href: "/oa-strategies", label: t("nav.strategy") },
+    { href: "/vision", label: t("nav.vision") },
   ];
 
   return (
@@ -46,7 +49,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-3">
           <div className="flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
@@ -60,9 +63,10 @@ export function Navbar() {
               </Link>
             ))}
           </div>
+          <LanguageThemeControls />
           <Button asChild className="rounded-full px-6 bg-primary text-primary-foreground hover:bg-primary/90 font-medium">
             <Link href="/contact" data-testid="nav-contact">
-              Contact Us <ArrowRight className="w-4 h-4 ml-2" />
+              {t("nav.contact")} <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </Button>
         </div>
@@ -71,7 +75,7 @@ export function Navbar() {
         <button
           className="md:hidden p-2 text-foreground"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
+          aria-label={t("nav.menuToggle")}
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -93,9 +97,12 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button asChild className="w-full mt-4" size="lg">
-            <Link href="/contact" data-testid="nav-mobile-contact">Contact Us</Link>
-          </Button>
+          <div className="mt-2 flex items-center justify-between gap-3">
+            <LanguageThemeControls />
+            <Button asChild className="w-full" size="lg">
+              <Link href="/contact" data-testid="nav-mobile-contact">{t("nav.contact")}</Link>
+            </Button>
+          </div>
         </div>
       )}
     </nav>

@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "tech": "OADIGI Tech",
+    "strategy": "OADIGI Strategy",
+    "vision": "Vision",
+    "contact": "Kontakt",
+    "menuToggle": "Menü umschalten",
+    "language": "Sprache",
+    "themeToggle": "Thema wechseln"
+  },
+  "footer": {
+    "description": "Ein modernes kommerzielles Ökosystem, das intelligente digitale Zukunft aufbaut. Fokus auf langfristige digitale Transformation und skalierbares Wachstum.",
+    "ecosystem": "Ökosystem",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "copyright": "© 2025 OADIGI. Alle Rechte vorbehalten.",
+    "statement": "Vertraulichkeits-Hinweis: Die auf dieser Plattform dargestellten Informationen spiegeln die strategische Ausrichtung und das Leistungsangebot von OADIGI wider.",
+    "links": {
+      "tech": "OADIGI Tech",
+      "strategy": "OADIGI Strategy",
+      "methodology": "Methodik",
+      "about": "Über uns",
+      "services": "Dienstleistungen",
+      "vision": "Vision & Strategie",
+      "contact": "Kontakt",
+      "privacy": "Datenschutz",
+      "terms": "AGB"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Ein modernes kommerzielles Ökosystem",
+      "title": "Wir bauen intelligente",
+      "titleAccent": "digitale Zukunft",
+      "subtitle": "OADIGI kombiniert Technologie, Strategie und digitale Transformation, um Unternehmen intelligent und sicher weiterzuentwickeln.",
+      "buttons": {
+        "explore": "Unser Ökosystem entdecken",
+        "discover": "Dienstleistungen entdecken",
+        "contact": "Kontakt aufnehmen"
+      }
+    },
+    "ecosystem": {
+      "badge": "Das Ökosystem",
+      "title": "Zwei spezialisierte Bereiche.\nEine Vision.",
+      "subtitle": "OADIGI ist als synergisches Ökosystem aufgebaut, in dem Technologie und Strategie zusammenkommen, um dauerhafte Transformation zu ermöglichen.",
+      "tech": {
+        "eyebrow": "Technologiebereich",
+        "title": "OADIGI Tech",
+        "description": "Unser Technologiebereich spezialisiert sich auf Software-Engineering, KI-Integration, Cloud-Infrastruktur und Cybersicherheit. Wir bauen skalierbare digitale Produkte für die Zukunft.",
+        "button": "OADIGI Tech entdecken",
+        "items": ["Web-Anwendungen", "KI-Integration", "Cloud & DevOps", "Cybersicherheit", "SaaS-Plattformen", "Mobile Apps"]
+      },
+      "strategy": {
+        "eyebrow": "Strategiebereich",
+        "title": "OADIGI Strategy",
+        "description": "Unsere Beratungsabteilung liefert strategische Beratung auf Führungsebene, Start-up-Begleitung, Marktbearbeitung und organisatorische Transformation in jeder Größenordnung.",
+        "button": "OADIGI Strategy entdecken",
+        "items": ["Unternehmensberatung", "Startup-Analyse", "Digitale Transformation", "Marktforschung", "Organisationsstrategie", "Wachstumsberatung"]
+      }
+    },
+    "philosophy": {
+      "badge": "Unsere Philosophie",
+      "title": "Für die nächste Generation digitaler Unternehmen entwickelt",
+      "items": [
+        {"title": "Wachstumsorientiert", "description": "Jeder Dienst ist auf Skalierbarkeit ausgelegt – von der ersten Codezeile bis zur letzten strategischen Empfehlung."},
+        {"title": "Sicherheit zuerst", "description": "Wir denken von Anfang an an Sicherheit. Cybersicherheit ist keine Nacharbeit, sondern eine Grundlage."},
+        {"title": "Innovationsorientiert", "description": "Wir bleiben den neuen Technologien immer einen Schritt voraus, damit unsere Kunden nicht selbst nachziehen müssen."},
+        {"title": "Analytisch präzise", "description": "Entscheidungen bei OADIGI sind datenbasiert und strategisch fundiert – keine Spekulationen, keine Abkürzungen."},
+        {"title": "Langfristiges Denken", "description": "Wir setzen auf nachhaltige digitale Transformation statt auf schnelle Lösungen."},
+        {"title": "Technisch exzellent", "description": "Sauberer Code, moderne Architekturen und Industriestandards sind unsere Baseline."}
+      ]
+    },
+    "vision": {
+      "badge": "Vision 2025 und darüber hinaus",
+      "title": "Wir sind gerade erst gestartet",
+      "subtitle": "OADIGI ist eine aufstrebende Kraft im digitalen Ökosystem. Wir legen die Basis für etwas Großes – ein Unternehmen, das das nächste Jahrzehnt digitaler Transformation prägen wird.",
+      "button": "Unsere Vision",
+      "secondary": "Ein Gespräch beginnen"
+    }
+  },
+  "contact": {
+    "hero": {"badge": "Kontakt aufnehmen", "title": "Lass uns ein", "titleAccent": "Gespräch beginnen", "subtitle": "Ob Sie ein Projekt im Kopf haben, eine Frage zu unseren Dienstleistungen oder einfach nur wissen möchten, was möglich ist – wir freuen uns darauf, von Ihnen zu hören."},
+    "cards": {
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "location": "Standort",
+      "locationText": "Global für Remote-Projekte verfügbar",
+      "responseTime": "Reaktionszeit",
+      "responseText": "Wir bemühen uns, alle Anfragen innerhalb von 24–48 Werktagen zu beantworten. Für dringende Anliegen kontaktieren Sie uns direkt telefonisch."
+    },
+    "form": {
+      "title": "Schreiben Sie uns",
+      "success": "Ihre Nachricht wurde gesendet. Wir melden uns bald bei Ihnen.",
+      "error": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt per E-Mail.",
+      "fullName": "Vollständiger Name",
+      "fullNamePlaceholder": "Ihr vollständiger Name",
+      "companyName": "Unternehmensname",
+      "companyNamePlaceholder": "Ihr Unternehmen",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "sie@unternehmen.com",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+1 234 567 890",
+      "service": "Benötigter Dienst",
+      "servicePlaceholder": "Dienst auswählen",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt, Ihrer Herausforderung oder Ihrer Frage...",
+      "submit": "Nachricht senden",
+      "submitting": "Wird gesendet...",
+      "privacy": "Mit dem Absenden dieses Formulars stimmen Sie unserer",
+      "privacyLink": "Datenschutzrichtlinie",
+      "privacyNote": "Ihre Informationen werden streng vertraulich behandelt.",
+      "validation": {
+        "fullName": "Der Name muss mindestens 2 Zeichen lang sein",
+        "companyName": "Der Unternehmensname ist erforderlich",
+        "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+        "phone": "Bitte geben Sie eine gültige Telefonnummer ein",
+        "service": "Bitte wählen Sie einen Dienst aus",
+        "message": "Die Nachricht muss mindestens 20 Zeichen lang sein"
+      }
+    }
+  },
+  "legal": {
+    "privacy": {
+      "badge": "Rechtliches",
+      "title": "Datenschutzrichtlinie",
+      "updated": "Zuletzt aktualisiert: Mai 2025"
+    },
+    "terms": {
+      "badge": "Rechtliches",
+      "title": "Allgemeine Geschäftsbedingungen",
+      "updated": "Zuletzt aktualisiert: Mai 2025"
+    }
+  },
+  "notFound": {
+    "title": "404 Seite nicht gefunden",
+    "message": "Haben Sie vergessen, diese Seite zum Router hinzuzufügen?"
+  }
+}

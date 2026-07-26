@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "about": "Chi siamo",
+    "services": "Servizi",
+    "tech": "OADIGI Tech",
+    "strategy": "OADIGI Strategy",
+    "vision": "Visione",
+    "contact": "Contattaci",
+    "menuToggle": "Apri/chiudi menu",
+    "language": "Lingua",
+    "themeToggle": "Cambia tema"
+  },
+  "footer": {
+    "description": "Un ecosistema commerciale moderno che costruisce futuri digitali intelligenti. Focus su trasformazione digitale a lungo termine e crescita scalabile.",
+    "ecosystem": "Ecosistema",
+    "company": "Azienda",
+    "legal": "Legale",
+    "copyright": "© 2025 OADIGI. Tutti i diritti riservati.",
+    "statement": "Dichiarazione di riservatezza: le informazioni presentate su questa piattaforma rappresentano la direzione strategica e l’offerta di servizi di OADIGI.",
+    "links": {
+      "tech": "OADIGI Tech",
+      "strategy": "OADIGI Strategy",
+      "methodology": "Metodologia",
+      "about": "Chi siamo",
+      "services": "Servizi",
+      "vision": "Visione e strategia",
+      "contact": "Contatto",
+      "privacy": "Privacy Policy",
+      "terms": "Termini e condizioni"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Un ecosistema commerciale moderno",
+      "title": "Costruiamo futuri",
+      "titleAccent": "digitali intelligenti",
+      "subtitle": "OADIGI combina tecnologia, strategia e trasformazione digitale per aiutare le aziende a evolvere in modo intelligente e sicuro.",
+      "buttons": {
+        "explore": "Esplora il nostro ecosistema",
+        "discover": "Scopri i servizi",
+        "contact": "Contattaci"
+      }
+    },
+    "ecosystem": {
+      "badge": "L'ecosistema",
+      "title": "Due divisioni specializzate.\nUna sola visione.",
+      "subtitle": "OADIGI è progettato come un ecosistema sinergico in cui tecnologia e strategia convergono per favorire una trasformazione duratura.",
+      "tech": {
+        "eyebrow": "Divisione tecnologia",
+        "title": "OADIGI Tech",
+        "description": "La nostra divisione tecnologica si specializza in ingegneria del software, integrazione AI, infrastrutture cloud e cybersecurity. Costruiamo prodotti digitali scalabili e progettati per il futuro.",
+        "button": "Esplora OADIGI Tech",
+        "items": ["Applicazioni web", "Integrazione AI", "Cloud & DevOps", "Cybersecurity", "Piattaforme SaaS", "App mobili"]
+      },
+      "strategy": {
+        "eyebrow": "Divisione strategia",
+        "title": "OADIGI Strategy",
+        "description": "La nostra divisione di consulenza fornisce indicazioni strategiche a livello esecutivo, supporto per startup, intelligence di mercato e trasformazione organizzativa a ogni scala.",
+        "button": "Esplora OADIGI Strategy",
+        "items": ["Consulenza aziendale", "Analisi startup", "Trasformazione digitale", "Ricerca di mercato", "Strategia organizzativa", "Consulenza crescita"]
+      }
+    },
+    "philosophy": {
+      "badge": "La nostra filosofia",
+      "title": "Pensato per la nuova generazione di business digitali",
+      "items": [
+        {"title": "Orientato alla crescita", "description": "Ogni servizio è progettato per essere scalabile, dalla prima riga di codice fino all’ultima raccomandazione strategica."},
+        {"title": "Sicurezza prima", "description": "Integriamo la sicurezza in ogni progetto. La cybersecurity non è un dettaglio, è una base."},
+        {"title": "Innovazione", "description": "Restiamo all’avanguardia delle tecnologie emergenti, così i nostri clienti non devono farlo da soli."},
+        {"title": "Rigore analitico", "description": "Le nostre decisioni sono guidate dai dati e da una solida riflessione strategica."},
+        {"title": "Pensiero a lungo termine", "description": "Diamo priorità alla trasformazione digitale sostenibile invece che a soluzioni temporanee."},
+        {"title": "Eccellenza tecnica", "description": "Codice pulito, architetture moderne e best practice industriali sono i nostri standard."}
+      ]
+    },
+    "vision": {
+      "badge": "Visione 2025 e oltre",
+      "title": "Siamo solo all'inizio",
+      "subtitle": "OADIGI è una forza emergente nell’ecosistema digitale. Stiamo costruendo le basi di qualcosa di importante: un’azienda che definirà il prossimo decennio della trasformazione digitale nella regione e oltre.",
+      "button": "La nostra visione",
+      "secondary": "Iniziare una conversazione"
+    }
+  },
+  "contact": {
+    "hero": {"badge": "Contattaci", "title": "Iniziamo una", "titleAccent": "conversazione", "subtitle": "Che tu abbia un progetto in mente, una domanda sui nostri servizi o semplicemente voglia esplorare ciò che è possibile, ci piacerebbe sentirti."},
+    "cards": {
+      "email": "Email",
+      "phone": "Telefono",
+      "location": "Posizione",
+      "locationText": "Disponibile a livello globale per progetti remoti",
+      "responseTime": "Tempo di risposta",
+      "responseText": "Ci sforziamo di rispondere a tutte le richieste entro 24-48 ore lavorative. Per questioni urgenti, contattaci direttamente telefonicamente."
+    },
+    "form": {
+      "title": "Inviaci un messaggio",
+      "success": "Il tuo messaggio è stato inviato. Ti ricontatteremo presto.",
+      "error": "Si è verificato un errore. Riprova o contattaci direttamente via email.",
+      "fullName": "Nome completo",
+      "fullNamePlaceholder": "Il tuo nome completo",
+      "companyName": "Nome azienda",
+      "companyNamePlaceholder": "La tua azienda",
+      "email": "Indirizzo email",
+      "emailPlaceholder": "tuo@azienda.com",
+      "phone": "Numero di telefono",
+      "phonePlaceholder": "+1 234 567 890",
+      "service": "Servizio richiesto",
+      "servicePlaceholder": "Seleziona un servizio",
+      "message": "Messaggio",
+      "messagePlaceholder": "Parlaci del tuo progetto, sfida o domanda...",
+      "submit": "Invia messaggio",
+      "submitting": "Invio in corso...",
+      "privacy": "Inviando questo modulo, accetti la nostra",
+      "privacyLink": "Informativa sulla privacy",
+      "privacyNote": "Le tue informazioni vengono gestite con estrema riservatezza.",
+      "validation": {
+        "fullName": "Il nome deve contenere almeno 2 caratteri",
+        "companyName": "Il nome dell’azienda è obbligatorio",
+        "email": "Inserisci un indirizzo email valido",
+        "phone": "Inserisci un numero di telefono valido",
+        "service": "Seleziona un servizio",
+        "message": "Il messaggio deve contenere almeno 20 caratteri"
+      }
+    }
+  },
+  "legal": {
+    "privacy": {
+      "badge": "Legale",
+      "title": "Informativa sulla privacy",
+      "updated": "Ultimo aggiornamento: maggio 2025"
+    },
+    "terms": {
+      "badge": "Legale",
+      "title": "Termini e condizioni",
+      "updated": "Ultimo aggiornamento: maggio 2025"
+    }
+  },
+  "notFound": {
+    "title": "404 Pagina non trovata",
+    "message": "Hai dimenticato di aggiungere questa pagina al router?"
+  }
+}

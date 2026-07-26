@@ -1,0 +1,227 @@
+{
+  "nav": {
+    "about": "Acerca de",
+    "services": "Servicios",
+    "tech": "OADIGI Tech",
+    "strategy": "OADIGI Strategy",
+    "vision": "Visión",
+    "contact": "Contáctanos",
+    "menuToggle": "Alternar menú",
+    "language": "Idioma",
+    "themeToggle": "Cambiar tema"
+  },
+  "footer": {
+    "description": "Un ecosistema comercial moderno que construye futuros digitales inteligentes. Centrado en la transformación digital a largo plazo y el crecimiento escalable.",
+    "ecosystem": "Ecosistema",
+    "company": "Empresa",
+    "legal": "Legal",
+    "copyright": "© 2025 OADIGI. Todos los derechos reservados.",
+    "statement": "Declaración de confidencialidad: la información presentada en esta plataforma representa la dirección estratégica y las ofertas de servicios de OADIGI.",
+    "links": {
+      "tech": "OADIGI Tech",
+      "strategy": "OADIGI Strategy",
+      "methodology": "Metodología",
+      "about": "Sobre nosotros",
+      "services": "Servicios",
+      "vision": "Visión y estrategia",
+      "contact": "Contacto",
+      "privacy": "Política de privacidad",
+      "terms": "Términos y condiciones"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Un ecosistema comercial moderno",
+      "title": "Construyendo",
+      "titleAccent": "futuros digitales inteligentes",
+      "subtitle": "OADIGI combina tecnología, estrategia y transformación digital para ayudar a las empresas a evolucionar de forma inteligente y segura.",
+      "buttons": {
+        "explore": "Explora nuestro ecosistema",
+        "discover": "Descubre los servicios",
+        "contact": "Contáctanos"
+      }
+    },
+    "ecosystem": {
+      "badge": "El ecosistema",
+      "title": "Dos divisiones especializadas.\nUna sola visión.",
+      "subtitle": "OADIGI está diseñado como un ecosistema sinérgico donde la tecnología y la estrategia convergen para impulsar una transformación duradera.",
+      "tech": {
+        "eyebrow": "División tecnológica",
+        "title": "OADIGI Tech",
+        "description": "Nuestra división tecnológica se especializa en ingeniería de software, integración de IA, infraestructura cloud y ciberseguridad. Construimos productos digitales escalables y preparados para el futuro.",
+        "button": "Explora OADIGI Tech",
+        "items": ["Aplicaciones web", "Integración de IA", "Cloud & DevOps", "Ciberseguridad", "Plataformas SaaS", "Aplicaciones móviles"]
+      },
+      "strategy": {
+        "eyebrow": "División de estrategia",
+        "title": "OADIGI Strategy",
+        "description": "Nuestra división de consultoría ofrece orientación estratégica de alto nivel, acompañamiento para startups, inteligencia de mercado y transformación organizacional a cualquier escala.",
+        "button": "Explora OADIGI Strategy",
+        "items": ["Consultoría empresarial", "Análisis de startups", "Transformación digital", "Investigación de mercado", "Estrategia organizacional", "Consultoría de crecimiento"]
+      }
+    },
+    "philosophy": {
+      "badge": "Nuestra filosofía",
+      "title": "Diseñado para la nueva generación de negocios digitales",
+      "items": [
+        {"title": "Orientado al crecimiento", "description": "Cada servicio está diseñado con escalabilidad en mente, desde la primera línea de código hasta la recomendación estratégica final."},
+        {"title": "Seguridad primero", "description": "Integramos la seguridad en cada compromiso. La ciberseguridad no es un añadido, es una base."},
+        {"title": "Innovación", "description": "Nos mantenemos a la vanguardia de las tecnologías emergentes para que nuestros clientes no tengan que hacerlo."},
+        {"title": "Riguroso analíticamente", "description": "Nuestras decisiones se basan en datos y en una reflexión estratégica sólida."},
+        {"title": "Pensamiento a largo plazo", "description": "Priorizamos la transformación digital sostenible frente a soluciones temporales."},
+        {"title": "Excelencia técnica", "description": "Un código limpio, arquitecturas modernas y buenas prácticas industriales son nuestros estándares."}
+      ]
+    },
+    "vision": {
+      "badge": "Visión 2025 y más allá",
+      "title": "Solo estamos empezando",
+      "subtitle": "OADIGI es una fuerza emergente en el ecosistema digital. Estamos construyendo la base de algo importante: una empresa que definirá la próxima década de la transformación digital en la región y más allá.",
+      "button": "Nuestra visión",
+      "secondary": "Iniciar una conversación"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Sobre OADIGI",
+      "title": "Un nuevo tipo de",
+      "titleAccent": "ecosistema digital",
+      "subtitle": "OADIGI es una sociedad comercial moderna construida en torno a dos divisiones especializadas, unidas por una creencia compartida: la tecnología y la estrategia deben evolucionar juntas."
+    },
+    "story": {
+      "badge": "Nuestra historia",
+      "title": "Construido con propósito desde el primer día",
+      "subtitle": "OADIGI fue fundada con una convicción clara: las empresas de la era digital necesitan tanto excelencia técnica como claridad estratégica."
+    },
+    "values": {
+      "badge": "Valores centrales",
+      "title": "Lo que defendemos"
+    },
+    "valuesItems": [
+      {"title": "Transparencia", "description": "Comunicamos con honestidad lo que podemos y lo que no podemos hacer."},
+      {"title": "Precisión", "description": "Nuestro trabajo es deliberado y medido. Preferimos hacer pocas cosas de forma excepcional."},
+      {"title": "Visión", "description": "Pensamos a largo plazo. Cada recomendación y producto está diseñado para escalar y perdurar."},
+      {"title": "Integridad", "description": "La confidencialidad del cliente, el manejo ético de los datos y las prácticas responsables son innegociables."}
+    ],
+    "ecosystem": {
+      "badge": "El modelo de ecosistema",
+      "title": "¿Por qué un ecosistema?",
+      "subtitle": "La mayoría de las empresas son proveedores tecnológicos o consultoras. OADIGI está diseñado para ser ambas cosas, con dos divisiones distintas pero profundamente conectadas."
+    },
+    "cta": {
+      "title": "¿Listo para aprender más?",
+      "subtitle": "Explora nuestros servicios o contáctanos directamente — nos encantaría hablar contigo.",
+      "button": "Ver servicios",
+      "secondary": "Contáctanos"
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "Catálogo completo de servicios",
+      "title": "Servicios a través de nuestro",
+      "titleAccent": "ecosistema",
+      "subtitle": "Desde la ingeniería de software hasta la estrategia ejecutiva, OADIGI ofrece una gama completa de servicios diseñados para avanzar a las organizaciones de forma inteligente."
+    },
+    "tech": {
+      "badge": "División tecnológica",
+      "title": "OADIGI Tech",
+      "button": "Vista completa de la división",
+      "items": [
+        {"title": "SEO local", "description": "Optimización de Google Maps y Google My Business para estar visible donde los clientes te buscan."},
+        {"title": "Redes sociales", "description": "Estrategia, contenido y animación en Facebook, Instagram y LinkedIn para atraer a tu audiencia."},
+        {"title": "Publicidad", "description": "Campañas dirigidas en Facebook Ads y Google Ads para generar tráfico y conversiones medibles."},
+        {"title": "Contenido", "description": "Creación de fotos, vídeos y copywriting para dar vida a tu marca en todos los canales."},
+        {"title": "Analytics", "description": "Seguimiento del rendimiento con Google Analytics y reportes claros para dirigir tus acciones."},
+        {"title": "E-reputación", "description": "Gestión de reseñas y respuestas estructuradas para reforzar la confianza y la imagen de marca."},
+        {"title": "Emailing", "description": "Newsletters y campañas de email diseñadas para convertir y fidelizar."},
+        {"title": "Influencia", "description": "Partnerships y embajadores para amplificar tu visibilidad y credibilidad online."}
+      ]
+    },
+    "strategy": {
+      "badge": "División de estrategia",
+      "title": "OADIGI Strategy",
+      "button": "Vista completa de la división",
+      "items": [
+        {"title": "Sitios web", "description": "Vitrinas, e-commerce y sitios responsive diseñados para una presencia digital profesional."},
+        {"title": "Aplicaciones", "description": "Aplicaciones móviles iOS/Android y web apps intuitivas y conectadas."},
+        {"title": "Software", "description": "Soluciones a medida, CRM y ERP adaptadas a tus procesos y desafíos."},
+        {"title": "Cloud", "description": "Hosting, SaaS e infraestructuras cloud escalables para sostener tu crecimiento."},
+        {"title": "Mantenimiento", "description": "Soporte técnico, actualizaciones y supervisión para garantizar la fiabilidad de tus servicios."},
+        {"title": "Seguridad", "description": "Auditoría, firewall y copias de seguridad para proteger tus datos y continuidad."},
+        {"title": "Asesoría", "description": "Arquitectura IT y digitalización para alinear tus sistemas con tus metas de negocio."},
+        {"title": "Formación", "description": "Acompañamiento para usar herramientas y buenas prácticas digitales internas."}
+      ]
+    },
+    "consulting": {
+      "badge": "Consultoría digital",
+      "title": "Consultoría digital",
+      "button": "Descubre nuestro enfoque",
+      "items": [
+        {"title": "Auditoría digital", "description": "Análisis completo de tu presencia digital para identificar palancas de rendimiento."},
+        {"title": "Estrategia de transformación", "description": "Hoja de ruta clara para hacer evolucionar tu organización hacia lo digital."},
+        {"title": "Formación", "description": "Sesiones prácticas para fortalecer las habilidades de tus equipos con herramientas digitales."}
+      ]
+    },
+    "cta": {
+      "title": "¿No estás seguro del servicio adecuado?",
+      "subtitle": "Escríbenos y te ayudaremos a identificar el mejor enfoque para tus necesidades.",
+      "button": "Iniciar una conversación"
+    }
+  },
+  "contact": {
+    "hero": {"badge": "Ponte en contacto", "title": "Empecemos una", "titleAccent": "conversación", "subtitle": "Ya sea que tengas un proyecto en mente, una pregunta sobre nuestros servicios o simplemente quieras explorar lo que es posible, nos encantaría escucharte."},
+    "cards": {
+      "email": "Correo",
+      "phone": "Teléfono",
+      "location": "Ubicación",
+      "locationText": "Disponible globalmente para compromisos a distancia",
+      "responseTime": "Tiempo de respuesta",
+      "responseText": "Nuestro objetivo es responder a todas las consultas en 24-48 horas hábiles. Para asuntos urgentes, contáctanos directamente por teléfono."
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "success": "Tu mensaje ha sido enviado. Nos pondremos en contacto pronto.",
+      "error": "Algo ha salido mal. Inténtalo de nuevo o contáctanos directamente por email.",
+      "fullName": "Nombre completo",
+      "fullNamePlaceholder": "Tu nombre completo",
+      "companyName": "Nombre de la empresa",
+      "companyNamePlaceholder": "Tu empresa",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tú@empresa.com",
+      "phone": "Número de teléfono",
+      "phonePlaceholder": "+1 234 567 890",
+      "service": "Servicio requerido",
+      "servicePlaceholder": "Selecciona un servicio",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu proyecto, desafío o pregunta...",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando...",
+      "privacy": "Al enviar este formulario, aceptas nuestra",
+      "privacyLink": "Política de privacidad",
+      "privacyNote": "Tu información se gestiona con estricta confidencialidad.",
+      "validation": {
+        "fullName": "El nombre completo debe tener al menos 2 caracteres",
+        "companyName": "El nombre de la empresa es obligatorio",
+        "email": "Introduce una dirección de correo válida",
+        "phone": "Introduce un número de teléfono válido",
+        "service": "Selecciona un servicio",
+        "message": "El mensaje debe tener al menos 20 caracteres"
+      }
+    }
+  },
+  "legal": {
+    "privacy": {
+      "badge": "Legal",
+      "title": "Política de privacidad",
+      "updated": "Última actualización: mayo 2025"
+    },
+    "terms": {
+      "badge": "Legal",
+      "title": "Términos y condiciones",
+      "updated": "Última actualización: mayo 2025"
+    }
+  },
+  "notFound": {
+    "title": "404 Página no encontrada",
+    "message": "¿Olvidaste añadir esta página al router?"
+  }
+}

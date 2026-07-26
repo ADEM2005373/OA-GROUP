@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -40,6 +41,7 @@ const services = [
 ];
 
 export default function Contact() {
+  const { t } = useTranslation();
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const form = useForm<FormValues>({
@@ -82,13 +84,13 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary mb-6">
-              Get In Touch
+              {t("contact.hero.badge")}
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 max-w-4xl leading-tight">
-              Let's Start a <span className="text-primary">Conversation</span>
+              {t("contact.hero.title")} <span className="text-primary">{t("contact.hero.titleAccent")}</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-              Whether you have a project in mind, a question about our services, or just want to explore what's possible — we'd love to hear from you.
+              {t("contact.hero.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -110,7 +112,7 @@ export default function Contact() {
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Email</p>
+                    <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{t("contact.cards.email")}</p>
                     <p className="font-medium text-sm group-hover:text-primary transition-colors">oa.for.dev@gmail.com</p>
                   </div>
                 </a>
@@ -154,9 +156,9 @@ export default function Contact() {
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Location</p>
+                    <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{t("contact.cards.location")}</p>
                     <p className="font-medium text-sm">Tunisia</p>
-                    <p className="text-muted-foreground text-xs mt-0.5">Available globally for remote engagements</p>
+                    <p className="text-muted-foreground text-xs mt-0.5">{t("contact.cards.locationText")}</p>
                   </div>
                 </div>
               </motion.div>
@@ -168,9 +170,9 @@ export default function Contact() {
                 transition={{ delay: 0.25 }}
                 className="p-6 rounded-xl border border-primary/20 bg-primary/5"
               >
-                <p className="text-sm font-medium mb-2">Response Time</p>
+                <p className="text-sm font-medium mb-2">{t("contact.cards.responseTime")}</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  We aim to respond to all inquiries within 24–48 business hours. For urgent matters, contact us directly by phone.
+                  {t("contact.cards.responseText")}
                 </p>
               </motion.div>
             </div>
@@ -183,7 +185,7 @@ export default function Contact() {
               className="lg:col-span-2"
             >
               <div className="p-8 md:p-10 rounded-2xl border border-border/50 bg-card">
-                <h2 className="text-2xl font-bold mb-8">Send Us a Message</h2>
+                <h2 className="text-2xl font-bold mb-8">{t("contact.form.title")}</h2>
 
                 {status === "success" && (
                   <motion.div
@@ -193,7 +195,7 @@ export default function Contact() {
                     data-testid="form-success"
                   >
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <p className="text-sm font-medium">Your message has been sent. We'll be in touch soon.</p>
+                    <p className="text-sm font-medium">{t("contact.form.success")}</p>
                   </motion.div>
                 )}
 
@@ -205,7 +207,7 @@ export default function Contact() {
                     data-testid="form-error"
                   >
                     <AlertCircle className="w-5 h-5 text-destructive flex-shrink-0" />
-                    <p className="text-sm">Something went wrong. Please try again or contact us directly by email.</p>
+                    <p className="text-sm">{t("contact.form.error")}</p>
                   </motion.div>
                 )}
 
@@ -217,10 +219,10 @@ export default function Contact() {
                         name="fullName"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-sm font-medium">Full Name</FormLabel>
+                            <FormLabel className="text-sm font-medium">{t("contact.form.fullName")}</FormLabel>
                             <FormControl>
                               <Input
-                                placeholder="Your full name"
+                                placeholder={t("contact.form.fullNamePlaceholder")}
                                 className="bg-background border-border/50 focus:border-primary/50 rounded-lg"
                                 data-testid="input-fullName"
                                 {...field}
@@ -235,10 +237,10 @@ export default function Contact() {
                         name="companyName"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-sm font-medium">Company Name</FormLabel>
+                            <FormLabel className="text-sm font-medium">{t("contact.form.companyName")}</FormLabel>
                             <FormControl>
                               <Input
-                                placeholder="Your company"
+                                placeholder={t("contact.form.companyNamePlaceholder")}
                                 className="bg-background border-border/50 focus:border-primary/50 rounded-lg"
                                 data-testid="input-companyName"
                                 {...field}
@@ -256,11 +258,11 @@ export default function Contact() {
                         name="email"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-sm font-medium">Email Address</FormLabel>
+                            <FormLabel className="text-sm font-medium">{t("contact.form.email")}</FormLabel>
                             <FormControl>
                               <Input
                                 type="email"
-                                placeholder="you@company.com"
+                                placeholder={t("contact.form.emailPlaceholder")}
                                 className="bg-background border-border/50 focus:border-primary/50 rounded-lg"
                                 data-testid="input-email"
                                 {...field}
@@ -275,11 +277,11 @@ export default function Contact() {
                         name="phone"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-sm font-medium">Phone Number</FormLabel>
+                            <FormLabel className="text-sm font-medium">{t("contact.form.phone")}</FormLabel>
                             <FormControl>
                               <Input
                                 type="tel"
-                                placeholder="+1 234 567 890"
+                                placeholder={t("contact.form.phonePlaceholder")}
                                 className="bg-background border-border/50 focus:border-primary/50 rounded-lg"
                                 data-testid="input-phone"
                                 {...field}
@@ -296,11 +298,11 @@ export default function Contact() {
                       name="service"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-sm font-medium">Service Needed</FormLabel>
+                          <FormLabel className="text-sm font-medium">{t("contact.form.service")}</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger className="bg-background border-border/50 focus:border-primary/50 rounded-lg" data-testid="select-service">
-                                <SelectValue placeholder="Select a service" />
+                                <SelectValue placeholder={t("contact.form.servicePlaceholder")} />
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent className="bg-card border-border/50">
@@ -319,10 +321,10 @@ export default function Contact() {
                       name="message"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-sm font-medium">Message</FormLabel>
+                          <FormLabel className="text-sm font-medium">{t("contact.form.message")}</FormLabel>
                           <FormControl>
                             <Textarea
-                              placeholder="Tell us about your project, challenge, or question..."
+                              placeholder={t("contact.form.messagePlaceholder")}
                               rows={5}
                               className="bg-background border-border/50 focus:border-primary/50 rounded-lg resize-none"
                               data-testid="input-message"
@@ -343,20 +345,20 @@ export default function Contact() {
                       {status === "loading" ? (
                         <span className="flex items-center gap-2">
                           <div className="w-4 h-4 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
-                          Sending...
+                          {t("contact.form.submitting")}
                         </span>
                       ) : (
                         <span className="flex items-center gap-2">
                           <Send className="w-4 h-4" />
-                          Send Message
+                          {t("contact.form.submit")}
                         </span>
                       )}
                     </Button>
 
                     <p className="text-xs text-muted-foreground text-center">
-                      By submitting this form, you agree to our{" "}
-                      <a href="/privacy" className="text-primary hover:underline">Privacy Policy</a>.
-                      Your information is handled with strict confidentiality.
+                      {t("contact.form.privacy")} {" "}
+                      <a href="/privacy" className="text-primary hover:underline">{t("contact.form.privacyLink")}</a>.
+                      {t("contact.form.privacyNote")}
                     </p>
                   </form>
                 </Form>

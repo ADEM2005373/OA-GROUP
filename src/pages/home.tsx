@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, Code2, TrendingUp, Shield, Globe, Cpu, BarChart3, ChevronDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -15,6 +16,8 @@ const stagger = {
 };
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
@@ -50,24 +53,23 @@ export default function Home() {
               variants={fadeUp}
               className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-medium text-primary mb-8 tracking-wider uppercase"
             >
-              A Modern Commercial Ecosystem
+              {t("home.hero.badge")}
             </motion.div>
 
             <motion.h1
               variants={fadeUp}
               className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 leading-[1.05]"
             >
-              Building Intelligent
+              {t("home.hero.title")}
               <br />
-              <span className="text-primary">Digital Futures</span>
+              <span className="text-primary">{t("home.hero.titleAccent")}</span>
             </motion.h1>
 
             <motion.p
               variants={fadeUp}
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-12 leading-relaxed"
             >
-              OADIGI combines technology, strategy, and digital transformation
-              to help businesses evolve intelligently and securely.
+              {t("home.hero.subtitle")}
             </motion.p>
 
             <motion.div
@@ -81,7 +83,7 @@ export default function Home() {
                 data-testid="hero-explore"
               >
                 <Link href="/services">
-                  Explore Our Ecosystem <ArrowRight className="w-4 h-4 ml-2" />
+                  {t("home.hero.buttons.explore")} <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
               <Button
@@ -91,7 +93,7 @@ export default function Home() {
                 className="rounded-full px-8 border-border/50 text-foreground hover:border-primary/50 font-semibold text-base"
                 data-testid="hero-discover"
               >
-                <Link href="/services">Discover Services</Link>
+                <Link href="/services">{t("home.hero.buttons.discover")}</Link>
               </Button>
               <Button
                 asChild
@@ -100,7 +102,7 @@ export default function Home() {
                 className="rounded-full px-8 text-muted-foreground hover:text-foreground font-semibold text-base"
                 data-testid="hero-contact"
               >
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/contact">{t("home.hero.buttons.contact")}</Link>
               </Button>
             </motion.div>
           </motion.div>
@@ -126,14 +128,13 @@ export default function Home() {
             className="text-center mb-20"
           >
             <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary mb-4">
-              The Ecosystem
+              {t("home.ecosystem.badge")}
             </div>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-              Two Specialized Divisions.
-              <br />One Vision.
+              {t("home.ecosystem.title")}
             </h2>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-              OADIGI is designed as a synergistic ecosystem where technology and strategy converge to drive lasting transformation.
+              {t("home.ecosystem.subtitle")}
             </p>
           </motion.div>
 
@@ -153,15 +154,15 @@ export default function Home() {
                     <Code2 className="w-6 h-6 text-primary" />
                   </div>
                   <span className="text-xs font-medium text-primary tracking-wider uppercase border border-primary/20 rounded-full px-3 py-1 bg-primary/5">
-                    Technology Division
+                    {t("home.ecosystem.tech.eyebrow")}
                   </span>
                 </div>
                 <h3 className="text-3xl font-bold mb-4">OADIGI Tech</h3>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  Our technology arm specializes in software engineering, AI integration, cloud infrastructure, and cybersecurity. We build scalable digital products designed for the future.
+                  {t("home.ecosystem.tech.description")}
                 </p>
                 <div className="grid grid-cols-2 gap-3 mb-8">
-                  {["Web Applications", "AI Integration", "Cloud & DevOps", "Cybersecurity", "SaaS Platforms", "Mobile Apps"].map((s) => (
+                  {(t("home.ecosystem.tech.items", { returnObjects: true }) as string[]).map((s) => (
                     <div key={s} className="flex items-center gap-2 text-sm text-muted-foreground">
                       <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                       {s}
@@ -170,7 +171,7 @@ export default function Home() {
                 </div>
                 <Button asChild variant="outline" className="rounded-full border-primary/20 hover:border-primary/50 hover:bg-primary/5 text-primary" data-testid="card-oa-for-dev">
                   <Link href="/oa-for-dev">
-                    Explore OADIGI Tech <ArrowRight className="w-4 h-4 ml-2" />
+                    {t("home.ecosystem.tech.button")} <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
               </div>
@@ -191,15 +192,15 @@ export default function Home() {
                     <TrendingUp className="w-6 h-6 text-primary" />
                   </div>
                   <span className="text-xs font-medium text-primary tracking-wider uppercase border border-primary/20 rounded-full px-3 py-1 bg-primary/5">
-                    Strategy Division
+                    {t("home.ecosystem.strategy.eyebrow")}
                   </span>
                 </div>
                 <h3 className="text-3xl font-bold mb-4">OADIGI Strategy</h3>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  Our consulting division delivers executive-level strategic guidance, startup mentorship, market intelligence, and organizational transformation at every scale.
+                  {t("home.ecosystem.strategy.description")}
                 </p>
                 <div className="grid grid-cols-2 gap-3 mb-8">
-                  {["Business Consulting", "Startup Analysis", "Digital Transformation", "Market Research", "Org. Strategy", "Growth Consulting"].map((s) => (
+                  {(t("home.ecosystem.strategy.items", { returnObjects: true }) as string[]).map((s) => (
                     <div key={s} className="flex items-center gap-2 text-sm text-muted-foreground">
                       <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                       {s}
@@ -208,7 +209,7 @@ export default function Home() {
                 </div>
                 <Button asChild variant="outline" className="rounded-full border-primary/20 hover:border-primary/50 hover:bg-primary/5 text-primary" data-testid="card-oa-strategies">
                   <Link href="/oa-strategies">
-                    Explore OADIGI Strategy <ArrowRight className="w-4 h-4 ml-2" />
+                    {t("home.ecosystem.strategy.button")} <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
               </div>
@@ -227,46 +228,15 @@ export default function Home() {
             className="mb-20"
           >
             <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary mb-4">
-              Our Philosophy
+              {t("home.philosophy.badge")}
             </div>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 max-w-2xl">
-              Built for the Next Generation of Digital Business
+              {t("home.philosophy.title")}
             </h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Globe,
-                title: "Growth-Oriented",
-                description: "Every service we offer is designed with scalability in mind — from the first line of code to the final strategic recommendation."
-              },
-              {
-                icon: Shield,
-                title: "Security-First",
-                description: "We embed security thinking into every engagement. Cybersecurity is not an afterthought — it's a foundation."
-              },
-              {
-                icon: Cpu,
-                title: "Innovation-Focused",
-                description: "We stay ahead of emerging technologies so our clients don't have to. AI, cloud, and modern architectures are our native terrain."
-              },
-              {
-                icon: BarChart3,
-                title: "Analytically Rigorous",
-                description: "Decisions at OADIGI are data-informed and strategically grounded — no guesswork, no shortcuts."
-              },
-              {
-                icon: TrendingUp,
-                title: "Long-Term Thinking",
-                description: "We focus on sustainable digital transformation, not quick fixes. Our relationships are built to last."
-              },
-              {
-                icon: Code2,
-                title: "Technically Excellent",
-                description: "Clean code, modern architectures, and industry best practices are the baseline — not the aspiration."
-              }
-            ].map((item, i) => (
+            {(t("home.philosophy.items", { returnObjects: true }) as Array<{ title: string; description: string }>).map((item, i) => (
               <motion.div
                 key={item.title}
                 initial={{ opacity: 0, y: 20 }}
@@ -276,7 +246,7 @@ export default function Home() {
                 className="p-8 rounded-xl border border-border/50 bg-card/50 hover:border-primary/20 hover:bg-card transition-all duration-300 group"
               >
                 <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center mb-5 group-hover:bg-primary/15 transition-colors">
-                  <item.icon className="w-5 h-5 text-primary" />
+                  {i % 3 === 0 ? <Globe className="w-5 h-5 text-primary" /> : i % 3 === 1 ? <Shield className="w-5 h-5 text-primary" /> : <Cpu className="w-5 h-5 text-primary" />}
                 </div>
                 <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
@@ -300,22 +270,22 @@ export default function Home() {
               className="relative z-10"
             >
               <div className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary mb-6">
-                Vision 2025 & Beyond
+                {t("home.vision.badge")}
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                We're Just Getting Started
+                {t("home.vision.title")}
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-                OADIGI is an emerging force in the digital ecosystem. We're building the foundation for something significant — a company that will define the next decade of digital transformation in the region and beyond.
+                {t("home.vision.subtitle")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="rounded-full px-8 bg-primary text-primary-foreground" data-testid="vision-cta">
                   <Link href="/vision">
-                    Our Vision <ArrowRight className="w-4 h-4 ml-2" />
+                    {t("home.vision.button")} <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="rounded-full px-8 border-primary/30 hover:border-primary/60 text-foreground">
-                  <Link href="/contact">Start a Conversation</Link>
+                  <Link href="/contact">{t("home.vision.secondary")}</Link>
                 </Button>
               </div>
             </motion.div>

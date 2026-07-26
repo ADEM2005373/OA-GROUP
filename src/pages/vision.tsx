@@ -1,12 +1,31 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 import { ArrowRight, Eye, Globe, Cpu, TrendingUp, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { SectionHeader } from "@/components/section-header";
 
+const visionItems = [
+  { icon: Globe, titleKey: "visionPage.section.items.0.title", descKey: "visionPage.section.items.0.description" },
+  { icon: Cpu, titleKey: "visionPage.section.items.1.title", descKey: "visionPage.section.items.1.description" },
+  { icon: TrendingUp, titleKey: "visionPage.section.items.2.title", descKey: "visionPage.section.items.2.description" },
+  { icon: Shield, titleKey: "visionPage.section.items.3.title", descKey: "visionPage.section.items.3.description" },
+];
+
+const priorities = [
+  { titleKey: "visionPage.priorities.0.title", descKey: "visionPage.priorities.0.description" },
+  { titleKey: "visionPage.priorities.1.title", descKey: "visionPage.priorities.1.description" },
+  { titleKey: "visionPage.priorities.2.title", descKey: "visionPage.priorities.2.description" },
+  { titleKey: "visionPage.priorities.3.title", descKey: "visionPage.priorities.3.description" },
+  { titleKey: "visionPage.priorities.4.title", descKey: "visionPage.priorities.4.description" },
+  { titleKey: "visionPage.priorities.5.title", descKey: "visionPage.priorities.5.description" },
+];
+
 export default function Vision() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
@@ -16,13 +35,13 @@ export default function Vision() {
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary mb-6">
-              Vision & Strategy
+              {t("visionPage.hero.badge")}
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 max-w-4xl leading-tight">
-              Where We're <span className="text-primary">Going</span>
+              {t("visionPage.hero.title")} <span className="text-primary">{t("visionPage.hero.titleAccent")}</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-              OADIGI was built with a long-range perspective. Our vision is not a destination — it's a direction. And we're committed to moving in it consistently, decisively, and transparently.
+              {t("visionPage.hero.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -46,29 +65,24 @@ export default function Vision() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <SectionHeader
-                badge="Our Vision"
-                title="A Digital Ecosystem Built to Last"
-                subtitle="We're not building a company for the next quarter. We're building an institution for the next decade."
+                badge={t("visionPage.section.badge")}
+                title={t("visionPage.section.title")}
+                subtitle={t("visionPage.section.subtitle")}
               />
               <p className="text-muted-foreground leading-relaxed mb-6">
-                OADIGI envisions a future where technology and strategic intelligence are seamlessly integrated — where organizations in our region and beyond can access world-class digital capabilities without compromise.
+                {t("visionPage.section.body1")}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We are at the beginning of that journey. As an emerging company, we are building our reputation on quality, honesty, and long-term thinking — not on inflated claims or short-term wins.
+                {t("visionPage.section.body2")}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Every service we offer today is designed with tomorrow in mind. Every client relationship is treated as a long-term partnership, not a transaction.
+                {t("visionPage.section.body3")}
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
-              {[
-                { icon: Globe, title: "Regional Leadership", desc: "Becoming a recognized force in digital transformation and technology consulting across North Africa and beyond." },
-                { icon: Cpu, title: "Technical Excellence", desc: "Maintaining the highest standards of engineering quality as we grow — never trading speed for integrity." },
-                { icon: TrendingUp, title: "Scalable Impact", desc: "Building systems and methodologies that create compounding value for our clients over time." },
-                { icon: Shield, title: "Trusted Partnership", desc: "Being known as the firm that tells clients what they need to hear — not just what they want to hear." },
-              ].map((item, i) => (
+              {visionItems.map((item, i) => (
                 <motion.div
-                  key={item.title}
+                  key={item.titleKey}
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -79,8 +93,8 @@ export default function Vision() {
                     <item.icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                    <h3 className="font-semibold mb-1">{t(item.titleKey)}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{t(item.descKey)}</p>
                   </div>
                 </motion.div>
               ))}
@@ -92,37 +106,12 @@ export default function Vision() {
       <section className="py-24 px-6 border-t border-border/30">
         <div className="max-w-7xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-            <SectionHeader badge="Strategic Priorities" title="How We Think About the Future" align="center" />
+            <SectionHeader badge={t("visionPage.priorities.badge")} title={t("visionPage.priorities.title")} align="center" />
           </motion.div>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Depth Over Breadth",
-                desc: "We'd rather be exceptional at a focused set of services than passable at many. Specialization compounds. Generalism dilutes."
-              },
-              {
-                title: "Trust Is the Business",
-                desc: "In consulting and technology, trust is the only real moat. We invest in it deliberately — through transparency, quality, and honesty in every interaction."
-              },
-              {
-                title: "Technology Serves People",
-                desc: "We build and advise with human impact in mind. The best digital solutions are the ones that genuinely make things better for the people who use them."
-              },
-              {
-                title: "Emerging Markets, Global Standards",
-                desc: "We believe our region deserves access to the same quality of digital services available anywhere in the world. That's what we're building toward."
-              },
-              {
-                title: "Long-Term Relationships",
-                desc: "The most valuable client relationships are built over years, not engagements. We structure how we work to support continuity and trust over time."
-              },
-              {
-                title: "Continuous Learning",
-                desc: "Technology evolves constantly. We invest deliberately in staying current — not to chase trends, but to serve our clients with the best available tools."
-              },
-            ].map((item, i) => (
+            {priorities.map((item, i) => (
               <motion.div
-                key={item.title}
+                key={item.titleKey}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -130,8 +119,8 @@ export default function Vision() {
                 className="p-8 rounded-xl border border-border/50 bg-card"
               >
                 <div className="w-8 h-0.5 bg-primary mb-5" />
-                <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="text-lg font-semibold mb-3">{t(item.titleKey)}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{t(item.descKey)}</p>
               </motion.div>
             ))}
           </div>
@@ -145,13 +134,13 @@ export default function Vision() {
             <div className="relative z-10">
               <Eye className="w-10 h-10 text-primary mx-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                "We're not trying to be the biggest.<br />We're trying to be the most trusted."
+                {t("visionPage.cta.title")}
               </h2>
               <p className="text-muted-foreground text-lg mb-10">
-                That's the standard we hold ourselves to — in every engagement, every deliverable, every conversation.
+                {t("visionPage.cta.subtitle")}
               </p>
               <Button asChild size="lg" className="rounded-full px-8 bg-primary text-primary-foreground" data-testid="vision-contact-cta">
-                <Link href="/contact">Start a Conversation <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                <Link href="/contact">{t("visionPage.cta.button")} <ArrowRight className="w-4 h-4 ml-2" /></Link>
               </Button>
             </div>
           </motion.div>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 import { Code2, Smartphone, Cloud, Bot, Shield, Server, Globe, Zap, GitBranch, Layers, ArrowRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
@@ -7,14 +8,14 @@ import { Footer } from "@/components/footer";
 import { SectionHeader } from "@/components/section-header";
 
 const services = [
-  { icon: Code2, title: "Web Applications", desc: "Modern, performant web platforms built with React, Next.js, and scalable backend architectures." },
-  { icon: Smartphone, title: "Mobile Applications", desc: "Cross-platform mobile apps that deliver native experiences on iOS and Android." },
-  { icon: Server, title: "SaaS Platforms", desc: "Multi-tenant SaaS products from concept to production, designed for scale." },
-  { icon: Globe, title: "APIs & Backend Systems", desc: "RESTful and GraphQL APIs built for reliability, documentation, and third-party integration." },
-  { icon: Cloud, title: "Cloud Deployment", desc: "AWS, GCP, and Azure deployments with Kubernetes, Docker, and CI/CD automation." },
-  { icon: Bot, title: "AI Integration", desc: "LLM integration, machine learning pipelines, intelligent automation, and AI-powered features." },
-  { icon: Shield, title: "Cybersecurity", desc: "Security audits, OWASP compliance, penetration testing guidance, and secure-by-default development." },
-  { icon: Zap, title: "Maintenance & Support", desc: "Long-term technical partnership — monitoring, updates, performance optimization, and support." },
+  { icon: Code2, titleKey: "oaForDev.servicesItems.0.title", descKey: "oaForDev.servicesItems.0.description" },
+  { icon: Smartphone, titleKey: "oaForDev.servicesItems.1.title", descKey: "oaForDev.servicesItems.1.description" },
+  { icon: Server, titleKey: "oaForDev.servicesItems.2.title", descKey: "oaForDev.servicesItems.2.description" },
+  { icon: Globe, titleKey: "oaForDev.servicesItems.3.title", descKey: "oaForDev.servicesItems.3.description" },
+  { icon: Cloud, titleKey: "oaForDev.servicesItems.4.title", descKey: "oaForDev.servicesItems.4.description" },
+  { icon: Bot, titleKey: "oaForDev.servicesItems.5.title", descKey: "oaForDev.servicesItems.5.description" },
+  { icon: Shield, titleKey: "oaForDev.servicesItems.6.title", descKey: "oaForDev.servicesItems.6.description" },
+  { icon: Zap, titleKey: "oaForDev.servicesItems.7.title", descKey: "oaForDev.servicesItems.7.description" },
 ];
 
 const techStack = [
@@ -27,15 +28,17 @@ const techStack = [
 ];
 
 const processSteps = [
-  { number: "01", title: "Discovery & Analysis", desc: "We study your requirements, constraints, and goals before writing a single line of code. Understanding comes first." },
-  { number: "02", title: "Architecture & Planning", desc: "We design a scalable, maintainable architecture and define the technology stack best suited to your context." },
-  { number: "03", title: "Development & Iteration", desc: "Agile delivery in focused sprints. You see progress frequently and can provide feedback at every stage." },
-  { number: "04", title: "Security & Quality Review", desc: "Code review, security checks, and performance testing are built into every release — not added at the end." },
-  { number: "05", title: "Deployment & Launch", desc: "Production-grade deployment with monitoring, logging, and rollback procedures in place." },
-  { number: "06", title: "Maintenance & Growth", desc: "We stay engaged after launch — supporting, improving, and scaling your product as your needs evolve." },
+  { number: "01", titleKey: "oaForDev.process.steps.0.title", descKey: "oaForDev.process.steps.0.description" },
+  { number: "02", titleKey: "oaForDev.process.steps.1.title", descKey: "oaForDev.process.steps.1.description" },
+  { number: "03", titleKey: "oaForDev.process.steps.2.title", descKey: "oaForDev.process.steps.2.description" },
+  { number: "04", titleKey: "oaForDev.process.steps.3.title", descKey: "oaForDev.process.steps.3.description" },
+  { number: "05", titleKey: "oaForDev.process.steps.4.title", descKey: "oaForDev.process.steps.4.description" },
+  { number: "06", titleKey: "oaForDev.process.steps.5.title", descKey: "oaForDev.process.steps.5.description" },
 ];
 
 export default function OaForDev() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
@@ -46,7 +49,7 @@ export default function OaForDev() {
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="flex items-center gap-3 mb-8">
-              <span className="text-sm font-medium text-primary tracking-wider uppercase border border-primary/20 rounded-full px-3 py-1 bg-primary/5">Technology Division</span>
+              <span className="text-sm font-medium text-primary tracking-wider uppercase border border-primary/20 rounded-full px-3 py-1 bg-primary/5">{t("oaForDev.hero.eyebrow")}</span>
             </div>
             <div className="mb-8">
               <img src="/logo-oa-group.png" alt="OADIGI Tech" className="h-32 w-auto object-contain" />
@@ -55,14 +58,14 @@ export default function OaForDev() {
               OADIGI Tech
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed mb-10">
-              We engineer software products, AI systems, and digital infrastructure for organizations that understand the importance of building things right the first time.
+              {t("oaForDev.hero.description")}
             </p>
             <div className="flex gap-4">
               <Button asChild size="lg" className="rounded-full px-8 bg-primary text-primary-foreground" data-testid="dev-hero-cta">
-                <Link href="/contact">Work With Us <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                <Link href="/contact">{t("oaForDev.hero.button")} <ArrowRight className="w-4 h-4 ml-2" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-full px-8 border-border/50 hover:border-primary/40">
-                <Link href="/projects">Our Methodology</Link>
+                <Link href="/projects">{t("oaForDev.hero.secondary")}</Link>
               </Button>
             </div>
           </motion.div>
@@ -86,7 +89,7 @@ export default function OaForDev() {
       {/* Services */}
       <section className="py-24 px-6 border-t border-border/30">
         <div className="max-w-7xl mx-auto">
-          <SectionHeader badge="What We Build" title="Services & Capabilities" subtitle="A full range of software engineering and technology services, delivered with precision." />
+          <SectionHeader badge={t("oaForDev.services.badge")} title={t("oaForDev.services.title")} subtitle={t("oaForDev.services.subtitle")} />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((s, i) => (
               <motion.div
@@ -101,8 +104,8 @@ export default function OaForDev() {
                 <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors">
                   <s.icon className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">{s.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
+                <h3 className="font-semibold mb-2">{t(s.titleKey)}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{t(s.descKey)}</p>
               </motion.div>
             ))}
           </div>
@@ -115,9 +118,9 @@ export default function OaForDev() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <SectionHeader
-                badge="AI Integration"
-                title="Intelligence Built Into Your Product"
-                subtitle="We help organizations move beyond AI hype into practical implementation — systems that actually work in production."
+                badge={t("oaForDev.ai.badge")}
+                title={t("oaForDev.ai.title")}
+                subtitle={t("oaForDev.ai.subtitle")}
               />
               <div className="space-y-4">
                 {[
@@ -160,9 +163,9 @@ export default function OaForDev() {
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <SectionHeader
-                badge="Cybersecurity"
-                title="Security Is Not Optional"
-                subtitle="We build with security as a first principle — not a final checkbox. Every project includes security considerations from day one."
+                badge={t("oaForDev.security.badge")}
+                title={t("oaForDev.security.title")}
+                subtitle={t("oaForDev.security.subtitle")}
               />
               <div className="space-y-4">
                 {[
@@ -187,7 +190,7 @@ export default function OaForDev() {
       <section className="py-24 px-6 border-t border-border/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <SectionHeader badge="Cloud & DevOps" title="Infrastructure for Scale" subtitle="We provision, configure, and maintain cloud infrastructure that grows with you." align="center" />
+            <SectionHeader badge={t("oaForDev.cloud.badge")} title={t("oaForDev.cloud.title")} subtitle={t("oaForDev.cloud.subtitle")} align="center" />
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -217,7 +220,7 @@ export default function OaForDev() {
       {/* Tech Stack */}
       <section className="py-24 px-6 border-t border-border/30">
         <div className="max-w-7xl mx-auto">
-          <SectionHeader badge="Technology Stack" title="Our Technical Terrain" subtitle="We work with modern, battle-tested technologies chosen for each project's specific requirements." />
+          <SectionHeader badge={t("oaForDev.techStack.badge")} title={t("oaForDev.techStack.title")} subtitle={t("oaForDev.techStack.subtitle")} />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {techStack.map((cat, i) => (
               <motion.div
@@ -245,7 +248,7 @@ export default function OaForDev() {
       {/* Process */}
       <section className="py-24 px-6 border-t border-border/30">
         <div className="max-w-7xl mx-auto">
-          <SectionHeader badge="Engineering Process" title="How We Work" subtitle="A structured, transparent engineering process that keeps clients informed and projects on track." />
+          <SectionHeader badge={t("oaForDev.process.badge")} title={t("oaForDev.process.title")} subtitle={t("oaForDev.process.subtitle")} />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {processSteps.map((step, i) => (
               <motion.div
@@ -257,8 +260,8 @@ export default function OaForDev() {
                 className="relative p-8 rounded-xl border border-border/50 bg-card"
               >
                 <span className="text-6xl font-bold text-primary/10 absolute top-4 right-6">{step.number}</span>
-                <h3 className="text-lg font-semibold mb-3 relative z-10">{step.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed relative z-10">{step.desc}</p>
+                <h3 className="text-lg font-semibold mb-3 relative z-10">{t(step.titleKey)}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed relative z-10">{t(step.descKey)}</p>
               </motion.div>
             ))}
           </div>
@@ -269,10 +272,10 @@ export default function OaForDev() {
       <section className="py-24 px-6 border-t border-border/30">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-4xl font-bold mb-6">Ready to build something?</h2>
-            <p className="text-muted-foreground text-lg mb-10">Tell us about your project and we'll discuss the best path forward.</p>
+            <h2 className="text-4xl font-bold mb-6">{t("oaForDev.cta.title")}</h2>
+            <p className="text-muted-foreground text-lg mb-10">{t("oaForDev.cta.subtitle")}</p>
             <Button asChild size="lg" className="rounded-full px-8 bg-primary text-primary-foreground" data-testid="dev-contact-cta">
-              <Link href="/contact">Start Your Project <ArrowRight className="w-4 h-4 ml-2" /></Link>
+              <Link href="/contact">{t("oaForDev.cta.button")} <ArrowRight className="w-4 h-4 ml-2" /></Link>
             </Button>
           </motion.div>
         </div>

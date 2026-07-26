@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import { Shield, Target, Eye, Layers, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { SectionHeader } from "@/components/section-header";
 
 export default function About() {
+  const { t } = useTranslation();
+  const values = t("about.valuesItems", { returnObjects: true }) as Array<{ title: string; description: string }>;
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
@@ -17,13 +21,13 @@ export default function About() {
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary mb-6">
-              About OADIGI
+              {t("about.hero.badge")}
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 max-w-4xl leading-tight">
-              A New Kind of <span className="text-primary">Digital Ecosystem</span>
+              {t("about.hero.title")} <span className="text-primary">{t("about.hero.titleAccent")}</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-              OADIGI is a modern commercial holding company built around two specialized divisions — united by a shared belief that technology and strategy must evolve together.
+              {t("about.hero.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -35,15 +39,15 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <SectionHeader
-                badge="Our Story"
-                title="Built with Purpose from Day One"
-                subtitle="OADIGI was founded with a clear conviction: businesses in the digital age need both technical excellence and strategic clarity — not one or the other."
+                badge={t("about.story.badge")}
+                title={t("about.story.title")}
+                subtitle={t("about.story.subtitle")}
               />
               <p className="text-muted-foreground leading-relaxed mb-6">
-                As an emerging company, we've chosen to build our reputation on transparency, quality, and honest communication. We don't claim decades of experience or thousands of clients — we claim a rigorous commitment to doing things right and a genuine passion for the work.
+                {t("about.story.body1")}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Every engagement we take on is an opportunity to demonstrate that modern digital services can be delivered with precision, integrity, and long-term perspective.
+                {t("about.story.body2")}
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
@@ -62,15 +66,10 @@ export default function About() {
       <section className="py-24 px-6 border-t border-border/30">
         <div className="max-w-7xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-            <SectionHeader badge="Core Values" title="What We Stand For" align="center" />
+            <SectionHeader badge={t("about.values.badge")} title={t("about.values.title")} align="center" />
           </motion.div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { icon: Shield, title: "Transparency", desc: "We communicate honestly about what we can and cannot do. No overpromising, no vague claims." },
-              { icon: Target, title: "Precision", desc: "Our work is deliberate and measured. We prefer doing fewer things exceptionally well over many things passably." },
-              { icon: Eye, title: "Vision", desc: "We think long-term. Every recommendation and product we build is designed to scale and endure." },
-              { icon: Layers, title: "Integrity", desc: "Client confidentiality, ethical data handling, and responsible practices are non-negotiable at OADIGI." },
-            ].map((v, i) => (
+            {values.map((v, i) => (
               <motion.div
                 key={v.title}
                 initial={{ opacity: 0, y: 20 }}
@@ -80,10 +79,10 @@ export default function About() {
                 className="p-8 rounded-xl border border-border/50 bg-card text-center hover:border-primary/20 transition-all"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mx-auto mb-5">
-                  <v.icon className="w-6 h-6 text-primary" />
+                  {i % 4 === 0 ? <Shield className="w-6 h-6 text-primary" /> : i % 4 === 1 ? <Target className="w-6 h-6 text-primary" /> : i % 4 === 2 ? <Eye className="w-6 h-6 text-primary" /> : <Layers className="w-6 h-6 text-primary" />}
                 </div>
                 <h3 className="text-lg font-semibold mb-3">{v.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{v.desc}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{v.description}</p>
               </motion.div>
             ))}
           </div>
@@ -104,15 +103,15 @@ export default function About() {
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <SectionHeader
-                badge="The Ecosystem Model"
-                title="Why an Ecosystem?"
-                subtitle="Most companies are either technology vendors or consultancies. OADIGI is designed to be both — with two distinct but deeply connected divisions."
+                badge={t("about.ecosystem.badge")}
+                title={t("about.ecosystem.title")}
+                subtitle={t("about.ecosystem.subtitle")}
               />
               <p className="text-muted-foreground leading-relaxed mb-6">
-                OADIGI Tech handles the technical execution — the code, the infrastructure, the AI, the security. OADIGI Strategy provides the strategic layer — helping businesses understand where they need to go and how to get there intelligently.
+                {t("about.ecosystem.body1")}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Together, they offer clients a complete journey: from strategic vision to technical realization. This is what we mean by a digital ecosystem.
+                {t("about.ecosystem.body2")}
               </p>
             </motion.div>
           </div>
@@ -123,14 +122,14 @@ export default function About() {
       <section className="py-24 px-6 border-t border-border/30">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-4xl font-bold mb-6">Ready to learn more?</h2>
-            <p className="text-muted-foreground text-lg mb-10">Explore our services or reach out directly — we'd love to discuss how OADIGI can support your goals.</p>
+            <h2 className="text-4xl font-bold mb-6">{t("about.cta.title")}</h2>
+            <p className="text-muted-foreground text-lg mb-10">{t("about.cta.subtitle")}</p>
             <div className="flex gap-4 justify-center">
               <Button asChild size="lg" className="rounded-full px-8 bg-primary text-primary-foreground" data-testid="about-services-cta">
-                <Link href="/services">View Services <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                <Link href="/services">{t("about.cta.button")} <ArrowRight className="w-4 h-4 ml-2" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-full px-8 border-border/50 hover:border-primary/40">
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/contact">{t("about.cta.secondary")}</Link>
               </Button>
             </div>
           </motion.div>
