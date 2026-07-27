@@ -90,7 +90,9 @@
     "story": {
       "badge": "Nuestra historia",
       "title": "Construido con propósito desde el primer día",
-      "subtitle": "OADIGI fue fundada con una convicción clara: las empresas de la era digital necesitan tanto excelencia técnica como claridad estratégica."
+      "subtitle": "OADIGI fue fundada con una convicción clara: las empresas de la era digital necesitan tanto excelencia técnica como claridad estratégica.",
+      "body1": "OADIGI nació con una misión simple pero ambiciosa: crear un ecosistema donde la excelencia técnica y el pensamiento estratégico no sean departamentos separados sino disciplinas complementarias dentro de una misma organización.",
+      "body2": "Nuestro fundador, con experiencia tanto en ingeniería de software como en consultoría empresarial, reconoció que las organizaciones enfrentaban un problema recurrente: la tecnología y la estrategia a menudo estaban desalineadas. OADIGI es la respuesta a esa realidad."
     },
     "values": {
       "badge": "Valores centrales",
@@ -105,7 +107,9 @@
     "ecosystem": {
       "badge": "El modelo de ecosistema",
       "title": "¿Por qué un ecosistema?",
-      "subtitle": "La mayoría de las empresas son proveedores tecnológicos o consultoras. OADIGI está diseñado para ser ambas cosas, con dos divisiones distintas pero profundamente conectadas."
+      "subtitle": "La mayoría de las empresas son proveedores tecnológicos o consultoras. OADIGI está diseñado para ser ambas cosas, con dos divisiones distintas pero profundamente conectadas.",
+      "body1": "El modelo de ecosistema de OADIGI ofrece un enfoque integrado de la transformación digital: los clientes de OADIGI Tech se benefician de un pensamiento estratégico que da forma al desarrollo de sus productos, mientras que los clientes de OADIGI Strategy reciben asesoramiento fundamentado en una verdadera experiencia técnica y las realidades de la ingeniería de software.",
+      "body2": "Esta estructura permite que ambas divisiones compartan perspectivas y metodologías de una manera que las empresas tradicionales no pueden replicar. El resultado es un asesoramiento mejor informado y una tecnología mejor pensada, en ambos casos."
     },
     "cta": {
       "title": "¿Listo para aprender más?",
@@ -167,6 +171,208 @@
       "button": "Iniciar una conversación"
     }
   },
+  "oaForDev": {
+    "hero": {
+      "eyebrow": "División tecnológica",
+      "description": "Diseñamos productos de software, sistemas de inteligencia artificial e infraestructura digital para organizaciones que entienden la importancia de hacer las cosas bien desde el principio.",
+      "button": "Trabaja con nosotros",
+      "secondary": "Nuestra metodología"
+    },
+    "services": {
+      "badge": "Lo que construimos",
+      "title": "Servicios y capacidades",
+      "subtitle": "Una gama completa de servicios de ingeniería de software y tecnología, entregados con precisión."
+    },
+    "servicesItems": [
+      {"title": "Aplicaciones web", "description": "Plataformas web modernas y de alto rendimiento construidas con React, Next.js y arquitecturas backend escalables."},
+      {"title": "Aplicaciones móviles", "description": "Aplicaciones móviles multiplataforma que ofrecen una experiencia nativa en iOS y Android."},
+      {"title": "Plataformas SaaS", "description": "Productos SaaS multiinquilino desde el concepto hasta la producción, diseñados para escalar."},
+      {"title": "APIs y sistemas backend", "description": "APIs REST y GraphQL diseñadas para fiabilidad, documentación e integración con terceros."},
+      {"title": "Despliegue cloud", "description": "Despliegues en AWS, GCP y Azure con Kubernetes, Docker y automatización CI/CD."},
+      {"title": "Integración de IA", "description": "Integración de LLM, pipelines de aprendizaje automático y automatización inteligente."},
+      {"title": "Ciberseguridad", "description": "Auditorías de seguridad, cumplimiento OWASP y desarrollo seguro por defecto."},
+      {"title": "Mantenimiento y soporte", "description": "Asociación técnica a largo plazo: monitoreo, actualizaciones, optimización y soporte."}
+    ],
+    "ai": {
+      "badge": "Integración de IA",
+      "title": "Inteligencia integrada en tu producto",
+      "subtitle": "Ayudamos a las organizaciones a ir más allá del hype de la IA hacia una implementación práctica — sistemas que realmente funcionan en producción.",
+      "items": [
+        "Funciones basadas en LLM integradas en plataformas existentes",
+        "Procesamiento inteligente de datos y pipelines de automatización",
+        "Flujos de trabajo de IA personalizados adaptados a tu dominio",
+        "Implementación responsable de IA con privacidad y seguridad",
+        "Consultoría de hoja de ruta de IA para liderazgo no técnico"
+      ]
+    },
+    "security": {
+      "badge": "Ciberseguridad",
+      "title": "La seguridad no es una opción",
+      "subtitle": "Construimos con la seguridad como principio fundamental, no como una casilla final.",
+      "items": [
+        "Cumplimiento OWASP Top 10 y prácticas de desarrollo seguro",
+        "Revisión de arquitectura de seguridad para nuevos sistemas",
+        "Evaluación de vulnerabilidades y orientación para remediación",
+        "Autenticación, autorización y manejo de datos seguros",
+        "Cabeceras CSP, limitación de tasa y endurecimiento de infraestructura"
+      ]
+    },
+    "cloud": {
+      "badge": "Cloud y DevOps",
+      "title": "Infraestructura para la escala",
+      "subtitle": "Aprovisionamos, configuramos y mantenemos infraestructura cloud que crece contigo.",
+      "items": [
+        {"title": "Arquitectura cloud", "description": "Entornos cloud diseñados a medida en AWS, GCP o Azure, optimizados para rendimiento, costo y fiabilidad."},
+        {"title": "Pipelines CI/CD", "description": "Flujos de trabajo automatizados de prueba y despliegue que permiten a los equipos lanzar con confianza y rapidez."},
+        {"title": "Orquestación de contenedores", "description": "Configuraciones de Docker y Kubernetes que hacen que la escalabilidad sea predecible y la complejidad operativa manejable."}
+      ]
+    },
+    "techStack": {
+      "badge": "Stack tecnológico",
+      "title": "Nuestro terreno técnico",
+      "subtitle": "Trabajamos con tecnologías modernas y probadas, elegidas según los requisitos específicos de cada proyecto.",
+      "categories": [
+        {"category": "Frontend", "techs": ["React", "Next.js", "TypeScript", "TailwindCSS", "Vue.js"]},
+        {"category": "Backend", "techs": ["Node.js", "Python", "FastAPI", "Express", "PostgreSQL"]},
+        {"category": "Móvil", "techs": ["React Native", "Expo", "Flutter", "Swift", "Kotlin"]},
+        {"category": "Cloud y DevOps", "techs": ["AWS", "GCP", "Docker", "Kubernetes", "GitHub Actions"]},
+        {"category": "IA y Datos", "techs": ["OpenAI API", "LangChain", "TensorFlow", "scikit-learn", "Pandas"]},
+        {"category": "Seguridad", "techs": ["OWASP", "OAuth 2.0", "JWT", "SSL/TLS", "WAF"]}
+      ]
+    },
+    "process": {
+      "badge": "Proceso de ingeniería",
+      "title": "Cómo trabajamos",
+      "subtitle": "Un proceso de ingeniería estructurado y transparente que mantiene a los clientes informados y los proyectos en curso.",
+      "steps": [
+        {"title": "Descubrimiento y alcance", "description": "Comenzamos por entender tu visión, objetivos y restricciones. Esta fase sienta las bases de todo lo que sigue."},
+        {"title": "Arquitectura y planificación", "description": "Diseñamos la arquitectura técnica y establecemos una hoja de ruta detallada con hitos claros y entregables definidos."},
+        {"title": "Diseño y prototipado", "description": "Creamos maquetas y prototipos para validar el enfoque antes de comenzar el desarrollo a gran escala."},
+        {"title": "Desarrollo iterativo", "description": "Construimos por sprints, entregando incrementos funcionales en cada ciclo para visibilidad y retroalimentación constantes."},
+        {"title": "Pruebas y despliegue", "description": "Pruebas rigurosas y despliegue progresivo aseguran calidad y estabilidad antes de la puesta en producción."},
+        {"title": "Soporte y evolución", "description": "Proporcionamos soporte continuo, actualizaciones y mejoras para mantener tu solución eficiente y relevante."}
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para construir algo?",
+      "subtitle": "Cuéntanos sobre tu proyecto y discutiremos el mejor camino a seguir.",
+      "button": "Iniciar tu proyecto"
+    }
+  },
+  "oaStrategies": {
+    "hero": {
+      "eyebrow": "División de estrategia",
+      "description": "Consultoría estratégica de nivel ejecutivo para organizaciones que exigen más que consejos genéricos. Ayudamos a las empresas a pensar con claridad, decidir con confianza y transformarse de forma inteligente.",
+      "button": "Contrata nuestros servicios",
+      "secondary": "Nuestra visión"
+    },
+    "services": {
+      "badge": "Servicios",
+      "title": "Lo que ofrecemos",
+      "subtitle": "Una gama completa de servicios de consultoría estratégica para empresas en cada etapa de su crecimiento."
+    },
+    "servicesItems": [
+      {"title": "Consultoría empresarial", "description": "Acompañamiento estratégico para organizaciones en momentos críticos de cambio — fases de crecimiento, reestructuración o expansión de mercado."},
+      {"title": "Análisis de startups", "description": "Análisis estructurado de tu modelo de negocio, mercado y trayectoria de crecimiento. Información práctica para equipos en fase inicial."},
+      {"title": "Transformación digital", "description": "Programas de transformación integral para modernizar la forma de operar, comunicar y crear valor."},
+      {"title": "Análisis de mercado", "description": "Inteligencia competitiva, estimación de mercado y estrategias de posicionamiento basadas en datos reales."},
+      {"title": "Optimización de rendimiento", "description": "Revisión de la eficiencia operativa para identificar fricciones, reducir desperdicios y liberar capacidad."},
+      {"title": "Estrategia organizacional", "description": "Recomendaciones sobre estructura, gobierno y organización alineadas con las ambiciones de tu empresa."},
+      {"title": "Consultoría de crecimiento", "description": "Estrategia de ingresos, planificación de adquisición de clientes y mejora del go-to-market para empresas en expansión."},
+      {"title": "Asesoría ejecutiva", "description": "Consejo estratégico continuo para equipos directivos en entornos complejos y cambiantes."}
+    ],
+    "philosophy": {
+      "badge": "Nuestra filosofía",
+      "title": "La estrategia sin claridad es solo una opinión",
+      "subtitle": "Creemos que una buena consultoría no consiste en producir informes, sino en ayudar a los equipos directivos a ver su situación con más claridad y actuar con más determinación.",
+      "body1": "OADIGI Strategy nació de una convicción: las empresas — especialmente las emergentes — merecen acceso a un pensamiento estratégico serio, no solo a plantillas de la industria y marcos genéricos.",
+      "body2": "Trabajamos estrechamente con nuestros clientes para comprender su contexto específico, sus desafíos específicos y sus ambiciones específicas. El resultado es una estrategia que realmente encaja."
+    },
+    "digitalTransformation": {
+      "badge": "Transformación digital",
+      "title": "Del legado al liderazgo",
+      "subtitle": "La transformación digital no es cuestión de tecnología, sino de repensar cómo tu organización crea y entrega valor en un mundo digital.",
+      "items": [
+        "Evaluación de digitalización de procesos y automatización de flujos de trabajo",
+        "Hoja de ruta de adopción tecnológica adaptada a tu sector",
+        "Planificación de gestión del cambio y estrategia de comunicación",
+        "Análisis de brechas de capacidades digitales y recomendaciones de formación",
+        "Selección de proveedores y supervisión de implementación"
+      ]
+    },
+    "startup": {
+      "badge": "Asesoría para startups",
+      "title": "Diseñado para fundadores que piensan a largo plazo",
+      "subtitle": "Las empresas en etapa inicial enfrentan decisiones que moldean todo lo que sigue. Nuestra práctica de asesoría para startups proporciona orientación estratégica rigurosa y honesta — sin adornos.",
+      "items": [
+        "Validación e iteración del modelo de negocio",
+        "Posicionamiento competitivo y estrategia de diferenciación",
+        "Planificación go-to-market y selección de canales",
+        "Modelado financiero y marcos de planificación",
+        "Preparación para inversión y presentación a inversores",
+        "Estrategia de escalamiento y diseño organizacional"
+      ]
+    },
+    "approachSection": {
+      "badge": "Nuestro enfoque",
+      "title": "Cómo trabajamos",
+      "subtitle": "Un modelo de compromiso claro y disciplinado que respeta tu tiempo y ofrece resultados concretos."
+    },
+    "approach": [
+      {"title": "Descubrimiento y encuadre", "description": "Comenzamos por comprender profundamente tu contexto, desafíos y ambiciones. Escuchar primero, aconsejar después."},
+      {"title": "Análisis y diagnóstico", "description": "Analizamos rigurosamente tu situación — datos, procesos, mercado y competencia — para identificar las verdaderas palancas."},
+      {"title": "Estrategia y recomendaciones", "description": "Desarrollamos una estrategia clara y procesable con recomendaciones concretas adaptadas a tu realidad."},
+      {"title": "Implementación y acompañamiento", "description": "Te acompañamos en la ejecución, asegurando que la estrategia se traduzca en resultados tangibles."},
+      {"title": "Seguimiento y ajuste", "description": "Realizamos un seguimiento regular y ajustamos la estrategia según los resultados y la evolución del contexto."}
+    ],
+    "cta": {
+      "title": "Pensemos juntos tu desafío.",
+      "subtitle": "Una conversación inicial enfocada suele ser el comienzo de una verdadera claridad estratégica.",
+      "button": "Solicitar una entrevista"
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "Proyectos y metodología",
+      "title": "Cómo",
+      "titleAccent": "trabajamos",
+      "subtitle": "Nuestra metodología se basa en la transparencia, el rigor y la colaboración genuina. Así se desarrolla cada compromiso en OADIGI."
+    },
+    "principles": {
+      "badge": "Principios clave",
+      "title": "Lo que guía cada proyecto",
+      "subtitle": "Estos principios no son aspiraciones — son operativos. Definen cómo trabajamos en cada compromiso, siempre.",
+      "0": {"title": "Primero entender", "description": "Cada compromiso comienza por comprender — el contexto del negocio, los usuarios, las restricciones y los objetivos. Nunca saltamos este paso."},
+      "1": {"title": "Claridad antes de ejecutar", "description": "Definimos qué construimos y por qué antes de construirlo. La ambigüedad al inicio se convierte en problemas costosos después."},
+      "2": {"title": "Entrega iterativa", "description": "Entregamos por etapas — incrementos frecuentes y comprobables que dan a los clientes visibilidad y capacidad de corregir el rumbo a tiempo."},
+      "3": {"title": "Calidad por defecto", "description": "Las revisiones de código, las verificaciones de seguridad y las pruebas están integradas en nuestro proceso, no añadidas al final."},
+      "4": {"title": "Bucles de retroalimentación", "description": "Creamos oportunidades estructuradas de retroalimentación en cada etapa."},
+      "5": {"title": "Comunicación transparente", "description": "Los clientes nunca se preguntan en qué estado está su proyecto. Las actualizaciones periódicas son parte de cómo trabajamos."}
+    },
+    "engagement": {
+      "badge": "Modelo de compromiso",
+      "title": "El recorrido del proyecto",
+      "subtitle": "Un enfoque estructurado y progresivo que da a los clientes claridad y control en cada etapa."
+    },
+    "phases": [
+      {"number": "01", "title": "Recepción y descubrimiento", "duration": "Semana 1–2", "activities": ["Entrevistas con las partes interesadas y alineación de objetivos", "Auditoría del sistema y procesos existentes", "Identificación de restricciones y riesgos", "Definición del alcance inicial y priorización"]},
+      {"number": "02", "title": "Planificación y arquitectura", "duration": "Semana 2–3", "activities": ["Diseño de la arquitectura técnica", "Planificación del proyecto y hitos", "Selección del stack tecnológico", "Estimación de recursos y calendario"]},
+      {"number": "03", "title": "Diseño y prototipado", "duration": "Semana 3–4", "activities": ["Diseño UX y arquitectura de la información", "Prototipado de interfaz y validación", "Prueba de concepto técnica si es necesaria", "Revisión y aprobación del cliente"]},
+      {"number": "04", "title": "Desarrollo y entrega", "duration": "Sprints continuos", "activities": ["Desarrollo por sprints ágiles", "Integración continua y pruebas", "Demostraciones al cliente y revisiones periódicas", "Despliegue incremental en entornos de staging"]},
+      {"number": "05", "title": "Lanzamiento y estabilización", "duration": "Últimas 2 semanas", "activities": ["Despliegue en producción y puesta en marcha", "Supervisión del rendimiento y optimización", "Documentación y transferencia", "Ventana de soporte post-lanzamiento"]},
+      {"number": "06", "title": "Asociación continua", "duration": "Continuo", "activities": ["Mantenimiento y supervisión", "Desarrollo de funcionalidades e iteración", "Actualizaciones de seguridad y gestión de dependencias", "Asesoría estratégica de producto"]}
+    ],
+    "commitment": {
+      "badge": "Nuestro compromiso",
+      "title": "Una asociación, no una transacción",
+      "subtitle": "Medimos el éxito no por la finalización del proyecto, sino por el impacto de nuestro trabajo en las organizaciones a las que servimos.",
+      "body1": "OADIGI está estructurado para apoyar relaciones a largo plazo. Queremos ser la firma a la que llamas cuando algo importante necesita resolverse.",
+      "body2": "Esto significa que invertimos en comprender profundamente tu negocio, nos comunicamos de manera proactiva y construimos sistemas que tu equipo puede operar con confianza."
+    },
+    "cta": {
+      "button": "Iniciar un proyecto"
+    }
+  },
   "contact": {
     "hero": {"badge": "Ponte en contacto", "title": "Empecemos una", "titleAccent": "conversación", "subtitle": "Ya sea que tengas un proyecto en mente, una pregunta sobre nuestros servicios o simplemente quieras explorar lo que es posible, nos encantaría escucharte."},
     "cards": {
@@ -208,16 +414,81 @@
       }
     }
   },
+  "visionPage": {
+    "hero": {
+      "badge": "Visión y estrategia",
+      "title": "Hacia dónde",
+      "titleAccent": "vamos",
+      "subtitle": "OADIGI fue construido con una perspectiva a largo plazo. Nuestra visión no es un destino, es una dirección. Y estamos comprometidos a avanzar en esa dirección con constancia, determinación y transparencia."
+    },
+    "section": {
+      "badge": "Nuestra visión",
+      "title": "Un ecosistema digital construido para perdurar",
+      "subtitle": "No construimos una empresa para el próximo trimestre. Construimos una institución para la próxima década.",
+      "body1": "OADIGI visualiza un futuro donde la tecnología y la inteligencia estratégica están integradas de manera fluida — donde las organizaciones de nuestra región y más allá puedan acceder a capacidades digitales de clase mundial sin concesiones.",
+      "body2": "Estamos al principio de ese camino. Como empresa emergente, estamos construyendo nuestra reputación sobre la calidad, la honestidad y la visión a largo plazo.",
+      "body3": "Cada servicio que ofrecemos hoy está diseñado pensando en el mañana. Cada relación con el cliente se trata como una asociación a largo plazo, no como una transacción.",
+      "items": [
+        {"title": "Liderazgo regional", "description": "Convertirnos en una fuerza reconocida en la transformación digital y la consultoría tecnológica en el norte de África y más allá."},
+        {"title": "Excelencia técnica", "description": "Mantener los más altos estándares de calidad en ingeniería a medida que crecemos — sin sacrificar integridad por velocidad."},
+        {"title": "Impacto escalable", "description": "Construir sistemas y metodologías que creen valor compuesto para nuestros clientes con el tiempo."},
+        {"title": "Asociación de confianza", "description": "Ser reconocidos como la firma que dice a sus clientes lo que necesitan oír — no solo lo que quieren oír."}
+      ]
+    },
+    "priorities": {
+      "badge": "Prioridades estratégicas",
+      "title": "Cómo pensamos el futuro",
+      "0": {"title": "Profundidad sobre amplitud", "description": "Preferimos sobresalir en un conjunto enfocado de servicios que ser mediocres en muchos. La especialización se acumula. La generalización diluye."},
+      "1": {"title": "La confianza es nuestro negocio", "description": "En consultoría y tecnología, la confianza es el único foso real. Invertimos en ella deliberadamente — mediante transparencia, calidad y honestidad en cada interacción."},
+      "2": {"title": "La tecnología al servicio de las personas", "description": "Construimos y asesoramos pensando en el impacto humano. Las mejores soluciones digitales son las que realmente mejoran las cosas."},
+      "3": {"title": "Mercados emergentes, estándares globales", "description": "Creemos que nuestra región merece acceder a la misma calidad de servicios digitales disponible en cualquier parte del mundo."},
+      "4": {"title": "Relaciones a largo plazo", "description": "Las relaciones más valiosas con los clientes se construyen a lo largo de los años, no de las misiones. Estructuramos nuestro trabajo para apoyar la continuidad y la confianza."},
+      "5": {"title": "Aprendizaje continuo", "description": "La tecnología evoluciona constantemente. Invertimos deliberadamente en mantenernos actualizados — no por seguir tendencias, sino para servir a nuestros clientes con las mejores herramientas disponibles."}
+    },
+    "cta": {
+      "title": "No buscamos ser los más grandes. Buscamos ser los más confiables.",
+      "subtitle": "Ese es el estándar al que nos ceñimos — en cada compromiso, cada entrega, cada conversación.",
+      "button": "Iniciar una conversación"
+    }
+  },
   "legal": {
     "privacy": {
       "badge": "Legal",
       "title": "Política de privacidad",
-      "updated": "Última actualización: mayo 2025"
+      "updated": "Última actualización: mayo 2025",
+      "intro": "Aviso de confidencialidad: OADIGI se compromete a proteger la privacidad y confidencialidad de todas las personas que interactúan con nuestras plataformas y servicios.",
+      "sections": [
+        {"title": "1. Quiénes somos", "content": "OADIGI es una sociedad comercial que opera a través de dos divisiones especializadas: OADIGI Tech (servicios tecnológicos) y OADIGI Strategy (consultoría empresarial).\n\nContacto: oa.for.dev@gmail.com"},
+        {"title": "2. Información que recopilamos", "content": "Recopilamos la información que nos proporcionas directamente, incluyendo:\n\n- Información de contacto (nombre, dirección de correo electrónico, número de teléfono, nombre de la empresa) enviada a través de nuestro formulario de contacto\n- Consultas, mensajes y comunicaciones que nos envías"},
+        {"title": "3. Cómo usamos tu información", "content": "Utilizamos la información que recopilamos únicamente para:\n\n- Responder a tus consultas\n- Proporcionar y gestionar nuestros servicios profesionales\n- Cumplir con las obligaciones legales y reglamentarias"},
+        {"title": "4. Base legal del tratamiento", "content": "Procesamos tu información personal sobre las siguientes bases legales:\n\n- Interés legítimo: responder a consultas y gestionar nuestras relaciones comerciales\n- Necesidad contractual: cumplir con nuestras obligaciones según los contratos de servicios"},
+        {"title": "5. Conservación de datos", "content": "Conservamos la información personal solo durante el tiempo necesario para cumplir los fines descritos en esta política."},
+        {"title": "6. Seguridad de los datos", "content": "Implementamos medidas técnicas y organizativas apropiadas para proteger tu información personal."},
+        {"title": "7. Tus derechos", "content": "Según tu jurisdicción, puedes tener derecho a:\n\n- Acceder a la información personal que tenemos sobre ti\n- Solicitar la corrección de información inexacta\n- Solicitar la eliminación de tu información personal\n\nContáctanos en oa.for.dev@gmail.com."},
+        {"title": "8. Cookies y seguimiento", "content": "Nuestro sitio web utiliza cookies técnicas mínimas necesarias para el funcionamiento básico."},
+        {"title": "9. Servicios de terceros", "content": "Nuestro formulario de contacto puede ser procesado a través de Formspree, un servicio de procesamiento de formularios de terceros."},
+        {"title": "10. Cambios en esta política", "content": "Podemos actualizar esta política de privacidad de vez en cuando."},
+        {"title": "11. Contacto", "content": "Para cualquier consulta relacionada con la privacidad, contáctanos en: oa.for.dev@gmail.com o por teléfono al +216 25 679 772."}
+      ]
     },
     "terms": {
       "badge": "Legal",
       "title": "Términos y condiciones",
-      "updated": "Última actualización: mayo 2025"
+      "updated": "Última actualización: mayo 2025",
+      "intro": "Aviso importante: Al acceder o utilizar el sitio web y los servicios de OADIGI, aceptas quedar vinculado por estos términos y condiciones.",
+      "sections": [
+        {"title": "1. Aceptación de los términos", "content": "Estos términos y condiciones rigen tu uso del sitio web de OADIGI y de todos los servicios que proporcionamos."},
+        {"title": "2. Descripción de los servicios", "content": "OADIGI proporciona servicios tecnológicos y de consultoría a través de dos divisiones:\n\nOADIGI Tech: Desarrollo de software, aplicaciones web y móviles, plataformas SaaS, APIs, despliegue cloud, integración de IA, ciberseguridad.\n\nOADIGI Strategy: Consultoría empresarial, análisis de startups, transformación digital, análisis de mercado, estrategia organizacional."},
+        {"title": "3. Propiedad intelectual", "content": "Todo el contenido de este sitio web es propiedad de OADIGI y está protegido por las leyes de propiedad intelectual aplicables."},
+        {"title": "4. Confidencialidad del cliente", "content": "OADIGI se toma muy en serio la confidencialidad del cliente. La información compartida con nosotros se trata como confidencial."},
+        {"title": "5. Limitación de responsabilidad", "content": "En la máxima medida permitida por la ley aplicable, OADIGI no será responsable por daños indirectos."},
+        {"title": "6. Garantías", "content": "OADIGI declara que ejecutará los servicios con una competencia y diligencia razonables."},
+        {"title": "7. Uso del sitio web", "content": "Aceptas utilizar este sitio web solo para fines lícitos."},
+        {"title": "8. Enlaces a terceros", "content": "Nuestro sitio web puede contener enlaces a sitios web de terceros."},
+        {"title": "9. Legislación aplicable", "content": "Estos términos y condiciones se rigen por las leyes de la República de Túnez."},
+        {"title": "10. Divisibilidad", "content": "Si alguna disposición resulta inexigible, las disposiciones restantes continuarán en vigor."},
+        {"title": "11. Contacto", "content": "Para cualquier pregunta, contáctanos en: oa.for.dev@gmail.com o por teléfono al +216 25 679 772."}
+      ]
     }
   },
   "notFound": {
@@ -225,3 +496,4 @@
     "message": "¿Olvidaste añadir esta página al router?"
   }
 }
+

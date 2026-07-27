@@ -1,17 +1,29 @@
-# TODO - Finalisation i18n + Mode Clair
+# Plan de correction — Traductions incomplètes
 
-## Étapes
-- [x] Audit initial (build OK, pages non migrées identifiées)
-- [ ] 1. CSS : Corriger les couleurs du mode clair dans `:root`
-- [ ] 2. Migrer `vision.tsx` → utiliser `t()`
-- [ ] 3. Migrer `projects.tsx` → utiliser `t()`
-- [ ] 4. Migrer `privacy.tsx` → utiliser `t()`
-- [ ] 5. Migrer `terms.tsx` → utiliser `t()`
-- [ ] 6. Migrer `not-found.tsx` → utiliser `t()`
-- [ ] 7. Compléter `es.json` avec clés manquantes
-- [ ] 8. Compléter `de.json` avec clés manquantes
-- [ ] 9. Compléter `it.json` avec clés manquantes
-- [ ] 10. Compléter `ar.json` avec clés manquantes
-- [ ] 11. Vérifier cohérence des clés entre tous les fichiers
-- [ ] 12. `npm run build` final
+## Phase A — es.json ✅
+- [x] Ajouter toutes les clés manquantes (complet)
+
+## Phase B — de.json
+- [ ] Ajouter `about.*` (complet)
+- [ ] Ajouter `services.*` (complet)
+- [ ] Ajouter `legal.privacy.*` (complet)
+- [ ] Ajouter `legal.terms.*` (complet)
+- [ ] Ajouter `oaForDev.*` (complet)
+- [ ] Ajouter `oaStrategies.*` (complet)
+- [ ] Ajouter `projects.*` (complet)
+- [ ] Ajouter `visionPage.*` (complet)
+
+## Phase C — it.json
+- [ ] Même scope que Phase B
+
+## Phase D — ar.json
+- [ ] Même scope que Phase B (attention RTL)
+
+## Phase E — oa-for-dev.tsx
+- [ ] Migrer texte codé en dur (AI, Security, Cloud, Tech Stack) vers t()
+- [ ] Ajouter nouvelles clés dans tous les fichiers de langue
+
+## Phase F — Vérification
+- [ ] `npm run build`
+- [ ] Validation jeu de clés identique entre les 6 fichiers
 

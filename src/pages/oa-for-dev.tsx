@@ -18,15 +18,6 @@ const services = [
   { icon: Zap, titleKey: "oaForDev.servicesItems.7.title", descKey: "oaForDev.servicesItems.7.description" },
 ];
 
-const techStack = [
-  { category: "Frontend", techs: ["React", "Next.js", "TypeScript", "TailwindCSS", "Vue.js"] },
-  { category: "Backend", techs: ["Node.js", "Python", "FastAPI", "Express", "PostgreSQL"] },
-  { category: "Mobile", techs: ["React Native", "Expo", "Flutter", "Swift", "Kotlin"] },
-  { category: "Cloud & DevOps", techs: ["AWS", "GCP", "Docker", "Kubernetes", "GitHub Actions"] },
-  { category: "AI & Data", techs: ["OpenAI API", "LangChain", "TensorFlow", "scikit-learn", "Pandas"] },
-  { category: "Security", techs: ["OWASP", "OAuth 2.0", "JWT", "SSL/TLS", "WAF"] },
-];
-
 const processSteps = [
   { number: "01", titleKey: "oaForDev.process.steps.0.title", descKey: "oaForDev.process.steps.0.description" },
   { number: "02", titleKey: "oaForDev.process.steps.1.title", descKey: "oaForDev.process.steps.1.description" },
@@ -93,7 +84,7 @@ export default function OaForDev() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((s, i) => (
               <motion.div
-                key={s.title}
+                key={s.titleKey}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -123,13 +114,7 @@ export default function OaForDev() {
                 subtitle={t("oaForDev.ai.subtitle")}
               />
               <div className="space-y-4">
-                {[
-                  "LLM-powered features integrated into existing platforms",
-                  "Intelligent data processing and automation pipelines",
-                  "Custom AI workflows tailored to your domain",
-                  "Responsible AI implementation with privacy and security in mind",
-                  "AI roadmap consulting for non-technical leadership",
-                ].map((point) => (
+                {(t("oaForDev.ai.items", { returnObjects: true }) as string[]).map((point) => (
                   <div key={point} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <p className="text-muted-foreground text-sm">{point}</p>
@@ -168,13 +153,7 @@ export default function OaForDev() {
                 subtitle={t("oaForDev.security.subtitle")}
               />
               <div className="space-y-4">
-                {[
-                  "OWASP Top 10 compliance and secure development practices",
-                  "Security architecture review for new systems",
-                  "Vulnerability assessment and remediation guidance",
-                  "Secure authentication, authorization, and data handling",
-                  "CSP headers, rate limiting, and infrastructure hardening",
-                ].map((point) => (
+                {(t("oaForDev.security.items", { returnObjects: true }) as string[]).map((point) => (
                   <div key={point} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <p className="text-muted-foreground text-sm">{point}</p>
@@ -192,12 +171,8 @@ export default function OaForDev() {
           <div className="text-center mb-16">
             <SectionHeader badge={t("oaForDev.cloud.badge")} title={t("oaForDev.cloud.title")} subtitle={t("oaForDev.cloud.subtitle")} align="center" />
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { icon: Cloud, title: "Cloud Architecture", desc: "Purpose-designed cloud environments on AWS, GCP, or Azure — optimized for performance, cost, and reliability." },
-              { icon: GitBranch, title: "CI/CD Pipelines", desc: "Automated testing and deployment workflows that enable teams to ship with confidence and speed." },
-              { icon: Layers, title: "Container Orchestration", desc: "Docker and Kubernetes setups that make scaling predictable and operational complexity manageable." },
-            ].map((item, i) => (
+<div className="grid md:grid-cols-3 gap-8">
+            {(t("oaForDev.cloud.items", { returnObjects: true }) as Array<{title: string; description: string}>).map((item, i) => (
               <motion.div
                 key={item.title}
                 initial={{ opacity: 0, y: 20 }}
@@ -207,10 +182,10 @@ export default function OaForDev() {
                 className="p-8 rounded-xl border border-border/50 bg-card hover:border-primary/20 transition-all"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-5">
-                  <item.icon className="w-6 h-6 text-primary" />
+                  {i === 0 ? <Cloud className="w-6 h-6 text-primary" /> : i === 1 ? <GitBranch className="w-6 h-6 text-primary" /> : <Layers className="w-6 h-6 text-primary" />}
                 </div>
                 <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -222,7 +197,7 @@ export default function OaForDev() {
         <div className="max-w-7xl mx-auto">
           <SectionHeader badge={t("oaForDev.techStack.badge")} title={t("oaForDev.techStack.title")} subtitle={t("oaForDev.techStack.subtitle")} />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {techStack.map((cat, i) => (
+            {(t("oaForDev.techStack.categories", { returnObjects: true }) as Array<{category: string; techs: string[]}>).map((cat, i) => (
               <motion.div
                 key={cat.category}
                 initial={{ opacity: 0, y: 20 }}
